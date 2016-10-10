@@ -3,8 +3,8 @@ Group project for COMP4122 class.
 
 ## Using Github
 1. Download [Github Desktop](https://desktop.github.com/)
-2. Done? Great! The website shows all of the basics you need to know!
-### Then in Unity
+2. Done? Great! The website shows all of the basics you need to know!    
+**In Unity**:
 1. Go to *Edit -> Project Settings -> Editor*. In *Version Control*, change *Mode* to *Visible Meta Files*. In *Asset Serialization*, change *Mode* to *Force Text*.
 
 ## Tips
