@@ -1,6 +1,7 @@
 # COMP4122
 Group project for COMP4122 class.
 
+## [DevLog](DevLog.md)
 ## Using Github
 1. Download [Github Desktop](https://desktop.github.com/)
 2. Done? Great! The website shows all of the basics you need to know!    
