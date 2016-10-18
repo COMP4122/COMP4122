@@ -7,20 +7,32 @@ public class BasicBullet : MonoBehaviour {
 
     private Vector3 shootDirection;
 
-    void FixedUpdate() {
-        transform.Translate(shootDirection.normalized * speed * Time.deltaTime, Space.World);
+    void Start() {
         Destroy(this.gameObject, 5f);
     }
+    void FixedUpdate() {
+        Move();
+    }
 
-	public void ShootToRay(Ray shootRay) {
+    protected void Move() {
+        transform.Translate(shootDirection.normalized * speed * Time.deltaTime, Space.World);
+    }
+
+	public void ShootWithRay(Ray shootRay) {
         this.shootDirection = shootRay.direction;
         this.transform.position = shootRay.origin;
-        //RotateToShootDirection();
-        Debug.Log("Actual shoot direction: " + shootDirection);
+        //TODO: RotateToShootDirection();
     }
 
     void RotateToShootDirection() {
         Vector3 newRotation = Vector3.RotateTowards(transform.forward, shootDirection, 0.01f, 0.0f);
         transform.rotation = Quaternion.LookRotation(newRotation, Vector3.up);
+    }
+
+    void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.tag == "Enemy") {
+            collision.gameObject.GetComponent<EnemyShooter>().Die();
+            Destroy(this.gameObject);
+        }
     }
 }

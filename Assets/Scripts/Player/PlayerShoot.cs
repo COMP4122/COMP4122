@@ -21,49 +21,59 @@
  */
 
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerShoot : MonoBehaviour {
 
     public BasicBullet basicBullet;
-    public LayerMask mask;
+    public Text ammoText;
+
+    private int basicBulletAmt = 5;
+
+    void Start() {
+        UpdateAmmoText();
+    }
 
     void Update() {
-        bool mouseButtonDown = Input.GetMouseButtonDown(0);
-        if (mouseButtonDown) {
-            RaycastHit hitPointOnFloor = MouseUtility.RayCastToFloor();
-
-            ShootBasicBulletTo(GetShootRay(hitPointOnFloor));
-            Debug.Log("Target: " + GetShootRay(hitPointOnFloor));
+        if (Input.GetMouseButtonDown(0) && HasAmmo()) {
+            ShootBasicBullet();
         }
     }
 
-    RaycastHit RayCastToFloor() {
-        RaycastHit hitPointOnFloor;
-        Ray rayToFloor = Camera.main.ScreenPointToRay(Input.mousePosition);
+    bool HasAmmo() {
+        return basicBulletAmt > 0;
+    }
 
-        if (Physics.Raycast(rayToFloor, out hitPointOnFloor, 100.0f, mask, QueryTriggerInteraction.Ignore)) {
-            // Debug.Log("RayToFloor: " + rayToFloor);
-            // Debug.Log("Hit point of floor: " + hitPointOnFloor.point);
-            return hitPointOnFloor;
-        } else {
-            Debug.Log("Something is wrong with PlayerShoot:RayCastToFloor");
-            return hitPointOnFloor;
+    public void AddAmmo(int amt) {
+        basicBulletAmt += amt;
+        UpdateAmmoText();
+    }
+
+    void UpdateAmmoText() {
+        ammoText.text = "Ammo: " + basicBulletAmt;
+        if (basicBulletAmt <= 0) {
+            ammoText.text = "No Ammo!";
         }
+    }
+
+    void ShootBasicBullet() {
+        RaycastHit hitOnFloor = MouseUtility.RayCastToFloor();
+        BasicBullet newBasic = Instantiate(basicBullet).GetComponent<BasicBullet>();
+        newBasic.ShootWithRay(GetShootRay(hitOnFloor));
+        basicBulletAmt--;
+        UpdateAmmoText();
     }
 
     Ray GetShootRay(RaycastHit hit) {
         Vector3 pointAboveFloor = hit.point + new Vector3(0, this.transform.position.y, 0);
         Vector3 shootDirection = pointAboveFloor - transform.position;
-
         Ray shootRay = new Ray(transform.position + 1f * shootDirection.normalized, shootDirection);
-
         return shootRay;
     }
 
-    void ShootBasicBulletTo(Ray ray) {
-        BasicBullet newBasic = Instantiate(basicBullet).GetComponent<BasicBullet>();
-        newBasic.ShootToRay(ray);
+    Ray GetShootRay(Vector3 targetPosition) {
+        Vector3 shootDirection = targetPosition - transform.position;
+        Ray shootRay = new Ray(transform.position + 1f * shootDirection.normalized, shootDirection);
+        return shootRay;
     }
-
-
 }

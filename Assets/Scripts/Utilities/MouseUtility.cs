@@ -13,17 +13,22 @@ public class MouseUtility : MonoBehaviour {
             // Debug.Log("Hit point of floor: " + hitPointOnFloor.point);
             return hitPointOnFloor;
         } else {
-            Debug.Log("Something is wrong with PlayerShoot:RayCastToFloor");
+            Debug.Log("Something is wrong with MouseUtility:RayCastToFloor");
             return hitPointOnFloor;
         }
     }
 
-    Ray GetShootRay(RaycastHit hit) {
-        Vector3 pointAboveFloor = hit.point + new Vector3(0, this.transform.position.y, 0);
-        Vector3 shootDirection = pointAboveFloor - transform.position;
+    public static Vector3 GetRayCastToFloorPoint(float height) {
+        RaycastHit hitPointOnFloor;
+        Ray rayToFloor = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Vector3 position = Vector3.zero;
 
-        Ray shootRay = new Ray(transform.position + 1f * shootDirection.normalized, shootDirection);
-
-        return shootRay;
+        if (Physics.Raycast(rayToFloor, out hitPointOnFloor, 100.0f, mask, QueryTriggerInteraction.Ignore)) {
+            position = hitPointOnFloor.point + new Vector3(0, height, 0);
+            return position;
+        } else {
+            Debug.Log("Something is wrong with MouseUtility:RayCastToFloorGetPoint");
+            return position;
+        }
     }
 }
