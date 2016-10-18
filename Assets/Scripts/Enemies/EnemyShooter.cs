@@ -10,16 +10,25 @@ public class EnemyShooter : MonoBehaviour {
 
     public GameObject enemyExplosion;
 
-    private float minShootInterval = 1f;
-    private float maxShootInterval = 4f;
+    public float minShootInterval = 4f;
+    public float maxShootInterval = 8f;
 
     private WaitForSeconds intervalBetweenBullets = new WaitForSeconds(.1f);
     private Player player;
+
+    private float speed = 5f;
 
     void Start() {
         player = GetterUtility.GetPlayer();
         StartCoroutine(ShootPlayer());
     }
+
+    void FixedUpdate() {
+        Vector3 moveDirection = player.transform.position - transform.position;
+        moveDirection = moveDirection.normalized;
+        transform.Translate(moveDirection*speed*Time.deltaTime, Space.World);
+    }
+
 
     IEnumerator ShootPlayer() {
         while (true) {

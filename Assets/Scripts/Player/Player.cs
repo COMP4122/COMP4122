@@ -18,7 +18,7 @@ public class Player : MonoBehaviour {
 
     //TODO: make a class for abilities
     void Update() {
-        if (Input.GetKeyDown(KeyCode.L)) {
+        if (Input.GetMouseButtonDown(2)) {
             blade.SetAwakeFor(0.5f);
         }
     }
@@ -26,6 +26,11 @@ public class Player : MonoBehaviour {
         health -= damageAmt;
         UpdateHealth();
         CheckDeath();
+    }
+
+    public void Heal(float healAmt) {
+        health += healAmt;
+        UpdateHealth();
     }
 
     public void GetHitFrom(Vector3 position, float hitSpeed) {

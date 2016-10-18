@@ -47,6 +47,10 @@ public class PlayerShoot : MonoBehaviour {
     public void AddAmmo(int amt) {
         basicBulletAmt += amt;
         UpdateAmmoText();
+
+        // TODO: shit code here
+        Player player = GetterUtility.GetPlayer();
+        player.Heal(amt * 2);
     }
 
     void UpdateAmmoText() {
