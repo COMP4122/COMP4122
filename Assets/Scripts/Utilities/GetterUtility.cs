@@ -6,9 +6,13 @@ public class GetterUtility {
         return GameObject.Find("Player").GetComponent<Player>();
     }
 
-    public static Flag GetEnemy()
+    public static GameObject GetEnemyFlag()
     {
-        return GameObject.Find("Flag_e").GetComponent<Flag>();
+        return GameObject.Find("Enemy Flag");
+    }
+
+    public static GameObject GetFriendFlag() {
+        return GameObject.Find("Friend Flag");
     }
 
     public static GameManager GetGameManager() {

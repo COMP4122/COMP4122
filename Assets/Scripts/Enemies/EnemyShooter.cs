@@ -5,55 +5,103 @@ public class EnemyShooter : MonoBehaviour {
 
     public EnemyBullet bullet;
 
-    public int Attackrange;
+
     public int minBullets = 1;
     public int maxBullets = 3;
-
-    public Player target;
-    public GameObject enemyExplosion;
 
     public float minShootInterval = 4f;
     public float maxShootInterval = 8f;
 
     private WaitForSeconds intervalBetweenBullets = new WaitForSeconds(.1f);
+
     private Player player;
-    private SphereCollider attackRange;
-    private float speed = 5f;
-    public Vector3 flag = new Vector3(-55f, 0f, 0f);
-    private Vector3 moveDirection;
+    public GameObject enemyExplosion;
+
+    public Transform flagTransform;
+    public float moveSpeed;
+
+    // AI
+    public GameObject shootTarget;
+    private enum EnemyState {walking, shooting};
+    private EnemyState currentState;
+
+    private float timeLastShoot;
+    public float shootRange;
+    public float shootCD = 1f;
+
 
     void Start() {
-        player = GetterUtility.GetPlayer();;
-        attackRange = gameObject.AddComponent<SphereCollider>();
-        attackRange.radius = Attackrange;
-        attackRange.isTrigger = true;
+        player = GetterUtility.GetPlayer();
+        flagTransform = GetterUtility.GetFriendFlag().transform;
+        currentState = EnemyState.walking;
+    }
+
+    void Update() {
+        switch (currentState) {
+            case EnemyState.walking:
+                WalkTo(flagTransform);
+                Debug.Log("In walking state");
+                break;
+            case EnemyState.shooting:
+                Debug.Log("In shooting state");
+                Shoot();
+                break;
+            default:
+                Debug.Log("Something's wrong with EnemyState");
+                break;
+        }
+    }
+
+    void SwitchToWalkingState() {
+        currentState = EnemyState.walking;
+    }
+
+    void SwitchToShootingState() {
+        currentState = EnemyState.shooting;
+
+    }
+
+    void UpdateShootTarget(GameObject newTarget) {
+        shootTarget = newTarget;
+    }
+
+    void OnTriggerEnter(Collider collider) {
+            if (collider.gameObject.tag == "Friend" && currentState != EnemyState.shooting) {
+                Debug.Log("Target Found: " + collider.gameObject.name);
+                SwitchToShootingState();
+                UpdateShootTarget(collider.gameObject);
+            }
     }
 
 
-    void FixedUpdate() {
-        SearchTarget();
-    }
 
-    void SearchTarget()
-    {
-        OnTriggerEnter(attackRange);
+    void WalkTo(Transform walkTarget) {
+        Vector3 moveDirection = walkTarget.position - this.transform.position;
         moveDirection = moveDirection.normalized;
-        transform.Translate(moveDirection * speed * Time.deltaTime, Space.World);
-        StartCoroutine(Shoot(target));
+        transform.Translate(moveDirection * moveSpeed * Time.deltaTime, Space.World);
+        Debug.Log(moveDirection);
     }
 
-    void OnTriggerEnter(Collider c)
-    {
-        
-        if (c.gameObject.layer == LayerMask.NameToLayer("Player") || c.gameObject.layer == LayerMask.NameToLayer("Friend"))
-        {
-            moveDirection = c.gameObject.transform.position - transform.position;
+    void Shoot() {
+        if (shootTarget == null) {
+            SwitchToWalkingState();
+        } else if (IsShootReady() && IsShootTargetInRange()) {
+            ShootAtTarget(shootTarget);
+        } else if (!IsShootTargetInRange()){
+            WalkTo(shootTarget.transform);
+            Debug.Log("Walking to: " + shootTarget.transform.position);
+        } else {
+            Debug.Log("Hey I'm standing here doing nothing");
         }
-        else
-        {
-            target = null;
-            moveDirection = flag - transform.position;
-        }
+    }
+
+    bool IsShootTargetInRange() {
+        float distance = (shootTarget.transform.position - this.transform.position).magnitude;
+        return distance < shootRange;
+    }
+
+    bool IsShootReady() {
+        return Time.time - timeLastShoot >= shootCD;
     }
 
     /*IEnumerator ShootPlayer() {
@@ -68,20 +116,23 @@ public class EnemyShooter : MonoBehaviour {
         }
     }*/
 
-    IEnumerator Shoot(Player target)
-    {
-        if (target != null)
-        { 
-            while (true)
-            {
-                WaitForSeconds wfsShootInterval = new WaitForSeconds(Random.Range(minShootInterval, maxShootInterval));
-                yield return wfsShootInterval;
-                for (int i = 0; i < Random.Range(minBullets, maxBullets); i++)
-                {
-                    EnemyBullet newEnemyBullet = Instantiate(bullet).GetComponent<EnemyBullet>();
-                    newEnemyBullet.ShootWithRay(GetShootRay(target.transform.position));
-                    yield return intervalBetweenBullets;
-                }
+    void ShootAtTarget(GameObject target) {
+        EnemyBullet newEnemyBullet = Instantiate(bullet).GetComponent<EnemyBullet>();
+        Ray ray = new Ray(this.transform.position, target.transform.position - this.transform.position);
+        newEnemyBullet.ShootWithRay(ray);
+        timeLastShoot = Time.time;
+    }
+
+
+    IEnumerator ShootAtTargetCoroutine(GameObject target) {
+        while (true) {
+            WaitForSeconds wfsShootInterval = new WaitForSeconds(Random.Range(minShootInterval, maxShootInterval));
+            yield return wfsShootInterval;
+            for (int i = 0; i < Random.Range(minBullets, maxBullets); i++) {
+                EnemyBullet newEnemyBullet = Instantiate(bullet).GetComponent<EnemyBullet>();
+                Ray ray = new Ray(this.transform.position, target.transform.position - this.transform.position);
+                newEnemyBullet.ShootWithRay(ray);
+                yield return intervalBetweenBullets;
             }
         }
     }

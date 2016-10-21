@@ -51,50 +51,6 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     // not used
-    void HorizontalMovementWithForce() {
-        float horizontalMovement;
-        float verticalMovement;
-        float moveForce = 20f;
-        // disable horizontal movement control while jumping
-        if (!jumping) {
-
-            // receive horizontal inputs
-            if (Input.GetAxis("Horizontal") != 0 && !jumping) {
-                if (Input.GetAxis("Horizontal") > 0) {
-                    horizontalMovement = 1f;
-                } else {
-                    horizontalMovement = -1f;
-                }
-            } else {
-                horizontalMovement = 0f;
-            }
-
-            // "vertical" here actually means z axis movement
-            if (Input.GetAxis("Vertical") != 0 && !jumping) {
-                if (Input.GetAxis("Vertical") > 0) {
-                    verticalMovement = 1f;
-                } else {
-                    verticalMovement = -1f;
-                }
-            } else {
-                verticalMovement = 0f;
-            }
-
-            // move direction
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
-            moveDirection = moveDirection.normalized;
-
-            // add force
-            rb.AddForce(moveDirection * moveForce);
-            Debug.Log("Force added: " + moveDirection * moveForce);
-
-            if (rb.velocity.magnitude > maxSpeed) {
-                rb.velocity = rb.velocity * (maxSpeed / rb.velocity.magnitude); // keep speed under max
-            }
-            Debug.Log("Speed: " + rb.velocity.magnitude);
-            // rb.velocity = new Vector3((moveDirection.normalized * speed).x, rb.velocity.y, (moveDirection.normalized * speed).z);
-        }
-    }
 
     // jumping is controlled with velocity directly
     void Jump() {

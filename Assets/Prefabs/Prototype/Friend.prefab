@@ -24,9 +24,9 @@ GameObject:
   - 23: {fileID: 23000014249087732}
   - 54: {fileID: 54000010229962188}
   - 114: {fileID: 114000014292971490}
-  - 135: {fileID: 135000012304646446}
+  - 65: {fileID: 65000013318173128}
   m_Layer: 9
-  m_Name: ZHUYIDI
+  m_Name: Friend
   m_TagString: Friend
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014120914082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.265314, y: 15.869426, z: -67.736374}
+  m_LocalPosition: {x: -42.4, y: 1.2, z: -0.30917358}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -94,8 +94,20 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!65 &65000013318173128
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014120914082}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 1, z: 20}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65000013552030138
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -120,23 +132,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 114000012614586092, guid: 628a29a0ff65044aea95ca8f9c1bf147, type: 2}
-  Attackrange: 100
   minBullets: 1
   maxBullets: 2
-  friendExplosion: {fileID: 1000010310424606, guid: 68dd6efa76522344cbb7fb30583f1c34,
-    type: 2}
   minShootInterval: 55
   maxShootInterval: 88
-  flag: {x: 55, y: 0, z: 0}
---- !u!135 &135000012304646446
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000014120914082}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 5
-  m_Center: {x: 0, y: 0, z: 0}
+  friendExplosion: {fileID: 1000010310424606, guid: 68dd6efa76522344cbb7fb30583f1c34,
+    type: 2}
+  flagTransform: {fileID: 0}
+  moveSpeed: 4
+  shootTarget: {fileID: 0}
+  shootRange: 4
+  shootCD: 1

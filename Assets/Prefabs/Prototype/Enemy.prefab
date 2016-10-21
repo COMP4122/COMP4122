@@ -24,6 +24,7 @@ GameObject:
   - 23: {fileID: 23000013079694250}
   - 114: {fileID: 114000013512683664}
   - 54: {fileID: 54000013626481658}
+  - 65: {fileID: 65000012593552372}
   m_Layer: 10
   m_Name: Enemy
   m_TagString: Enemy
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012856000164}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.94, y: 1.62, z: -2.4135056}
+  m_LocalPosition: {x: 12.4, y: 1.58, z: -3.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -95,6 +96,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!65 &65000012593552372
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012856000164}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 1, z: 20}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114000013512683664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -107,15 +120,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 114000011319407342, guid: 0d37052f92baa444192437d36e2e21cb, type: 2}
-  Attackrange: 1111
   minBullets: 1
   maxBullets: 2
-  target: {fileID: 0}
-  enemyExplosion: {fileID: 1000011914622928, guid: e97a394e61658454abfde3d4594d79a1,
-    type: 2}
   minShootInterval: 4
   maxShootInterval: 8
-  flag: {x: -55, y: 0, z: 0}
+  enemyExplosion: {fileID: 1000011914622928, guid: e97a394e61658454abfde3d4594d79a1,
+    type: 2}
+  flagTransform: {fileID: 0}
+  moveSpeed: 5
+  shootTarget: {fileID: 0}
+  shootRange: 8
+  shootCD: 1
 --- !u!136 &136000010100394798
 CapsuleCollider:
   m_ObjectHideFlags: 1
