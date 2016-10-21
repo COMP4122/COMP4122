@@ -16,5 +16,10 @@ public class EnemyBullet : BasicBullet{
             collision.gameObject.GetComponent<Player>().GetHitFrom(transform.position, hitSpeed);
             Destroy(this.gameObject);
         }
+        if (collision.gameObject.tag == "Friend")
+        {
+            collision.gameObject.GetComponent<FriendShooter>().Die();
+            Destroy(this.gameObject);
+        }
     }
 }

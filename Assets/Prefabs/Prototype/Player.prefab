@@ -159,7 +159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74c24ce738d7542788a13420ca996964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basicBullet: {fileID: 0}
+  basicBullet: {fileID: 114000012614586092, guid: 628a29a0ff65044aea95ca8f9c1bf147,
+    type: 2}
   ammoText: {fileID: 0}
 --- !u!114 &114000010393537200
 MonoBehaviour:

@@ -32,7 +32,7 @@ public class BasicBullet : MonoBehaviour {
     void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.tag == "Enemy") {
             collision.gameObject.GetComponent<EnemyShooter>().Die();
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
     }
 }
