@@ -144,7 +144,8 @@ public class EnemyShooter : MonoBehaviour {
     }
 
     public void Die() {
-        Instantiate(enemyExplosion, transform.position, transform.rotation);
+        GameObject obj = (GameObject) Instantiate(enemyExplosion, transform.position, transform.rotation);
+        Destroy(obj, 3);
         Destroy(this.gameObject);
     }
 }

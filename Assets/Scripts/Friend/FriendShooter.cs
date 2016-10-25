@@ -143,7 +143,8 @@ public class FriendShooter : MonoBehaviour {
     }
 
     public void Die() {
-        Instantiate(friendExplosion, transform.position, transform.rotation);
+        GameObject obj = (GameObject) Instantiate(friendExplosion, transform.position, transform.rotation);
+        Destroy(obj, 3);
         Destroy(this.gameObject);
     }
 }
