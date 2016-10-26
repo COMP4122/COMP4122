@@ -26,7 +26,7 @@ public class EnemyShooter : MonoBehaviour {
     void FixedUpdate() {
         Vector3 moveDirection = player.transform.position - transform.position;
         moveDirection = moveDirection.normalized;
-        transform.Translate(moveDirection*speed*Time.deltaTime, Space.World);
+        transform.Translate(moveDirection * speed * Time.deltaTime, Space.World);
     }
 
 

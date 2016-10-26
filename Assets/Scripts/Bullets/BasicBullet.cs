@@ -4,6 +4,7 @@ public class BasicBullet : MonoBehaviour {
 
     public float damage;
     public float speed;
+    public bool canPenetrate = true;
 
     private Vector3 shootDirection;
 
@@ -32,7 +33,8 @@ public class BasicBullet : MonoBehaviour {
     void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.tag == "Enemy") {
             collision.gameObject.GetComponent<EnemyShooter>().Die();
-            Destroy(this.gameObject);
+            if (!canPenetrate)
+                Destroy(this.gameObject);
         }
     }
 }

@@ -110,7 +110,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Time: 0.1
-  m_StartWidth: 0.15
+  m_StartWidth: 1
   m_EndWidth: 0
   m_Colors:
     m_Color[0]:
@@ -143,6 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 6
   speed: 50
+  penetrateable: 1
   hitSpeed: 10
 --- !u!135 &135000012679743516
 SphereCollider:
