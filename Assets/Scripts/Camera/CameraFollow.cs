@@ -7,6 +7,7 @@ public class CameraFollow : MonoBehaviour {
     public float verticalAngle;
     public float horizontalAngle;
     public Transform followObject;
+    public float rotateSpeed = 40f;
 
     #region rotation variable
     private float horizontalDistance = 0;
@@ -16,9 +17,17 @@ public class CameraFollow : MonoBehaviour {
 
     #endregion
     void Update() {
-        
+        RotateCamera();
     }
 
+    void RotateCamera() {
+        if (Input.GetKey(KeyCode.LeftBracket)) {
+            verticalAngle -= rotateSpeed * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.RightBracket)) {
+            verticalAngle += rotateSpeed * Time.deltaTime;
+        }
+    }
 	void LateUpdate () {
         MoveToTarget();
         LookAtTarget();
