@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000011866608838}
-  - 136: {fileID: 136000010934021334}
+  - 114: {fileID: 114000011088359520}
   m_Layer: 0
   m_Name: SnowTree1
   m_TagString: Untagged
@@ -37,6 +37,7 @@ GameObject:
   - 4: {fileID: 4000011927453056}
   - 33: {fileID: 33000013948350166}
   - 23: {fileID: 23000014133173118}
+  - 64: {fileID: 64000011541723630}
   m_Layer: 0
   m_Name: Mesh1_Tree_Model
   m_TagString: Untagged
@@ -50,8 +51,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010787675184}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.64901, y: 2.9779148, z: 58.27219}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 53.639668, y: 3.0373664, z: 75.78633}
   m_LocalScale: {x: 2, y: 3, z: 2}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -108,16 +109,28 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011011350244}
   m_Mesh: {fileID: 4300000, guid: 04a6876120efbf64ab6d98ccc8c8bc0c, type: 3}
---- !u!136 &136000010934021334
-CapsuleCollider:
+--- !u!64 &64000011541723630
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011011350244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 04a6876120efbf64ab6d98ccc8c8bc0c, type: 3}
+--- !u!114 &114000011088359520
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010787675184}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.76255417
-  m_Height: 3.252949
-  m_Direction: 1
-  m_Center: {x: 0, y: 1.5, z: -0.6}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c5af518910b04b01ad8c29502698fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxScale: 1.5
+  minScale: 0.75

@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012821137674}
-  - 136: {fileID: 136000013430856186}
+  - 114: {fileID: 114000011520837256}
   m_Layer: 0
   m_Name: SnowTree6
   m_TagString: Untagged
@@ -37,6 +37,7 @@ GameObject:
   - 4: {fileID: 4000013840182574}
   - 33: {fileID: 33000013803412440}
   - 23: {fileID: 23000011934411636}
+  - 64: {fileID: 64000012787276564}
   m_Layer: 0
   m_Name: Mesh1_Group1_Model
   m_TagString: Untagged
@@ -50,10 +51,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010596640032}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.86097, y: 14.997253, z: 92.937645}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 59.4, y: 2.73, z: 25.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children:
   - {fileID: 4000013840182574}
   m_Father: {fileID: 0}
@@ -108,16 +109,28 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011958655384}
   m_Mesh: {fileID: 4300000, guid: a49abf763b08d7642aac13cafd45f972, type: 3}
---- !u!136 &136000013430856186
-CapsuleCollider:
+--- !u!64 &64000012787276564
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011958655384}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: a49abf763b08d7642aac13cafd45f972, type: 3}
+--- !u!114 &114000011520837256
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010596640032}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.2679024
-  m_Height: 6.284834
-  m_Direction: 1
-  m_Center: {x: -1.2, y: 2.5, z: -1.3}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c5af518910b04b01ad8c29502698fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxScale: 1.5
+  minScale: 0.75

@@ -2,8 +2,8 @@
 
 public class RandomScale : MonoBehaviour {
 
-    private float maxScale = 1.5f;
-    private float minScale = 0.75f;
+    public float maxScale = 1.5f;
+    public float minScale = 0.75f;
 	// Use this for initialization
 	void Start () {
 		transform.localScale *= Random.Range(minScale, maxScale);
