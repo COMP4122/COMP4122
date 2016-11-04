@@ -10676,10 +10676,6 @@ Prefab:
       propertyPath: m_Name
       value: SnowTree6 (21)
       objectReference: {fileID: 0}
-    - target: {fileID: 4000012821137674, guid: 14e6bb411e7097742b8fa1e163eba47e, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14e6bb411e7097742b8fa1e163eba47e, type: 2}
   m_IsPrefabParent: 0

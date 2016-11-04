@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013597483136}
-  - 136: {fileID: 136000010527831112}
   m_Layer: 0
   m_Name: SnowTree4
   m_TagString: Untagged
@@ -37,6 +36,7 @@ GameObject:
   - 4: {fileID: 4000013289992000}
   - 33: {fileID: 33000013457851190}
   - 23: {fileID: 23000012122056282}
+  - 64: {fileID: 64000011128020374}
   m_Layer: 0
   m_Name: Mesh1_Group1_Model
   m_TagString: Untagged
@@ -63,8 +63,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011792118732}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.256174, y: 14.997253, z: 92.63811}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 51.73926, y: 2.99254, z: 68.09476}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -108,16 +108,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013956052166}
   m_Mesh: {fileID: 4300000, guid: bdcfeae659651984ea0845f0cb774e80, type: 3}
---- !u!136 &136000010527831112
-CapsuleCollider:
+--- !u!64 &64000011128020374
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011792118732}
+  m_GameObject: {fileID: 1000013956052166}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.0643616
-  m_Height: 7.1169496
-  m_Direction: 1
-  m_Center: {x: -1, y: 3, z: -1.1}
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: bdcfeae659651984ea0845f0cb774e80, type: 3}
