@@ -7468,7 +7468,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 57.812004, y: 62.930004, z: 157.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
 --- !u!4 &830094808 stripped
 Transform:
   m_PrefabParentObject: {fileID: 480464, guid: 2ffa7d662036b3b41b2513ab00e530d2, type: 2}
@@ -7687,6 +7687,14 @@ Prefab:
     - target: {fileID: 100004, guid: 6e759fb2e8b564bd985aa25f41fc2dcf, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 6e759fb2e8b564bd985aa25f41fc2dcf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 6e759fb2e8b564bd985aa25f41fc2dcf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e759fb2e8b564bd985aa25f41fc2dcf, type: 3}
@@ -8699,7 +8707,7 @@ Transform:
   - {fileID: 1912673500}
   - {fileID: 352580942}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
 --- !u!4 &993791622 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011576129780, guid: 39283263b62994742b643e6773e16f86,
@@ -9777,7 +9785,7 @@ Transform:
   m_Children:
   - {fileID: 923038718}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
 --- !u!1001 &1096447010
 Prefab:
   m_ObjectHideFlags: 0
@@ -10091,7 +10099,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: -0.39600003, y: -3.64, z: 2.329}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
 --- !u!1001 &1145499578
 Prefab:
   m_ObjectHideFlags: 0
@@ -18253,7 +18261,7 @@ Transform:
   - {fileID: 1055819485}
   - {fileID: 1176724377}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
 --- !u!4 &1935193478 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011531854652, guid: 2b06232e3baed4a40a19374c69597968,
@@ -18569,7 +18577,7 @@ GameObject:
   - 4: {fileID: 1951655292}
   - 95: {fileID: 1951655291}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
