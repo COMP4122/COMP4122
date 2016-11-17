@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public float maxSpeed;
     public float jumpSpeed;
+    public float gravityMagnitude;
 
     private Vector3 moveDirection;
     private bool jumping = false;
@@ -18,6 +19,8 @@ public class PlayerMovement : MonoBehaviour {
     void FixedUpdate() {
         HorizontalMovement();
         Jump();
+        ManualGravity();
+        ManualJumpChecking();
     }
 
     void HorizontalMovement() {
@@ -29,6 +32,8 @@ public class PlayerMovement : MonoBehaviour {
 
             rb.velocity = new Vector3((moveDirection.normalized * maxSpeed).x, rb.velocity.y, (moveDirection.normalized * maxSpeed).z);
         }
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+            LookAtMovingDirection();
     }
 
     // jumping is controlled with velocity directly
@@ -36,6 +41,24 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space) && !jumping) {
             rb.velocity = new Vector3(rb.velocity.x, jumpSpeed, rb.velocity.z);
             jumping = true;
+        }
+    }
+
+    void LookAtMovingDirection() {
+        Vector3 positionToLookAt = new Vector3(
+                transform.position.x + rb.velocity.normalized.x,
+                transform.position.y,
+                transform.position.z + rb.velocity.normalized.z);
+        transform.LookAt(positionToLookAt);
+    }
+
+    void ManualGravity() {
+        rb.AddForce(Vector3.down * gravityMagnitude);
+    }
+
+    void ManualJumpChecking() {
+        if (rb.velocity.y == 0f) {
+            jumping = false;
         }
     }
 
