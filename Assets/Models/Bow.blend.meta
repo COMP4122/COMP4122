@@ -1,34 +1,24 @@
 fileFormatVersion: 2
-guid: 6e759fb2e8b564bd985aa25f41fc2dcf
-timeCreated: 1477894782
+guid: 0ed8b650d039a41f6bc885a62276b195
+timeCreated: 1479476122
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Plane
-    100004: Plane_001
-    100006: Plane_002
-    100008: Cube
+    100002: Cube
+    100004: Plane
     400000: //RootNode
-    400002: Plane
-    400004: Plane_001
-    400006: Plane_002
-    400008: Cube
-    2300000: //RootNode
+    400002: Cube
+    400004: Plane
+    2300000: Cube
     2300002: Plane
-    2300004: Plane_001
-    2300006: Plane_002
-    2300008: Cube
-    3300000: //RootNode
+    2300004: //RootNode
+    3300000: Cube
     3300002: Plane
-    3300004: Plane_001
-    3300006: Plane_002
-    3300008: Cube
+    3300004: //RootNode
     4300000: Plane
-    4300002: Plane_001
-    4300004: Plane_002
-    4300006: Cube
+    4300002: Cube
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -91,7 +81,7 @@ ModelImporter:
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
-    skeletonHasParents: 0
+    skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1

@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.AI;
 
 public class AnimalController : MonoBehaviour {
     public float maxHealth, walkSpeed, runSpeed, detectDistance;
@@ -15,7 +14,7 @@ public class AnimalController : MonoBehaviour {
     private Rigidbody rb;
     private Collider co;
     private Animator anim;
-    private NavMeshAgent nav;
+    private UnityEngine.AI.NavMeshAgent nav;
     private GameObject[] navPoints;
     private AudioSource audioSource;
 
@@ -35,7 +34,7 @@ public class AnimalController : MonoBehaviour {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         co = GetComponentInChildren<MeshCollider>();
-        nav = GetComponent<NavMeshAgent>();
+        nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
         navPoints = GameObject.FindGameObjectsWithTag("Navigation");
         audioSource = GetComponent<AudioSource>();
 

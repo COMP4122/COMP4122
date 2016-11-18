@@ -1,36 +1,92 @@
 fileFormatVersion: 2
-guid: 6e759fb2e8b564bd985aa25f41fc2dcf
-timeCreated: 1477894782
+guid: 4d55a75834864448d973e0b00e552ae4
+timeCreated: 1479462040
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Plane
-    100004: Plane_001
-    100006: Plane_002
-    100008: Cube
-    400000: //RootNode
-    400002: Plane
-    400004: Plane_001
-    400006: Plane_002
-    400008: Cube
-    2300000: //RootNode
-    2300002: Plane
-    2300004: Plane_001
-    2300006: Plane_002
-    2300008: Cube
-    3300000: //RootNode
-    3300002: Plane
-    3300004: Plane_001
-    3300006: Plane_002
-    3300008: Cube
-    4300000: Plane
-    4300002: Plane_001
-    4300004: Plane_002
-    4300006: Cube
+    100000: Armature
+    100002: ArmL1
+    100004: ArmL2
+    100006: ArmLeft1
+    100008: ArmR1
+    100010: ArmR2
+    100012: ArmRight1
+    100014: Body1
+    100016: //RootNode
+    100018: FingerL1
+    100020: FingerL2
+    100022: FingerR1
+    100024: FingerR2
+    100026: FootL1
+    100028: FootR1
+    100030: HandL1
+    100032: HandL2
+    100034: HandL3
+    100036: HandR1
+    100038: HandR2
+    100040: HandR3
+    100042: Head1
+    100044: LegL1
+    100046: LegL2
+    100048: LegL3
+    100050: LegLeft1
+    100052: LegR1
+    100054: LegR2
+    100056: LegR3
+    100058: LegRight1
+    100060: Neck1
+    100062: Rig1
+    100064: Spine1
+    100066: Spine2
+    400000: Armature
+    400002: ArmL1
+    400004: ArmL2
+    400006: ArmLeft1
+    400008: ArmR1
+    400010: ArmR2
+    400012: ArmRight1
+    400014: Body1
+    400016: //RootNode
+    400018: FingerL1
+    400020: FingerL2
+    400022: FingerR1
+    400024: FingerR2
+    400026: FootL1
+    400028: FootR1
+    400030: HandL1
+    400032: HandL2
+    400034: HandL3
+    400036: HandR1
+    400038: HandR2
+    400040: HandR3
+    400042: Head1
+    400044: LegL1
+    400046: LegL2
+    400048: LegL3
+    400050: LegLeft1
+    400052: LegR1
+    400054: LegR2
+    400056: LegR3
+    400058: LegRight1
+    400060: Neck1
+    400062: Rig1
+    400064: Spine1
+    400066: Spine2
+    4300000: ArmLeft1
+    4300002: ArmRight1
+    4300004: Head1
+    4300006: LegRight1
+    4300008: LegLeft1
+    4300010: Body1
     7400000: Default Take
     9500000: //RootNode
+    13700000: ArmLeft1
+    13700002: ArmRight1
+    13700004: Body1
+    13700006: Head1
+    13700008: LegLeft1
+    13700010: LegRight1
   materials:
     importMaterials: 1
     materialName: 0
@@ -91,7 +147,7 @@ ModelImporter:
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
-    skeletonHasParents: 0
+    skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1

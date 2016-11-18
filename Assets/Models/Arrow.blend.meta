@@ -1,25 +1,32 @@
 fileFormatVersion: 2
-guid: 22ade35807926f744bd99075876d4f9f
-timeCreated: 1469694766
-licenseType: Store
+guid: 5bd7a6a5770af43bb8cd236fbcadd04b
+timeCreated: 1479476677
+licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Rock_Round_m_05
-    100002: //RootNode
-    400000: Rock_Round_m_05
-    400002: //RootNode
-    2300000: Rock_Round_m_05
-    3300000: Rock_Round_m_05
-    4300000: Rock_Round_m_05
+    100000: //RootNode
+    100002: Cube
+    100004: Cube_001
+    400000: //RootNode
+    400002: Cube
+    400004: Cube_001
+    2300000: Cube
+    2300002: Cube_001
+    3300000: Cube
+    3300002: Cube_001
+    4300000: Cube_001
+    4300002: Cube
+    7400000: Default Take
+    9500000: //RootNode
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
@@ -58,6 +65,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -68,9 +76,12 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
