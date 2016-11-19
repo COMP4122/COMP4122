@@ -9,7 +9,6 @@ TagManager:
   - Arrow
   - Invisible
   - Navigation
-  - Airwall
   layers:
   - Default
   - TransparentFX
@@ -20,8 +19,8 @@ TagManager:
   - 
   - 
   - Ground
-  - Invisible
-  - Rock
+  - 
+  - 
   - 
   - 
   - 
