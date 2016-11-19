@@ -94,6 +94,7 @@ public class PlayerShoot : MonoBehaviour{
         newRock.SetFlySpeed(shootSpeed);
         newRock.SetTarget(target);
         newRock.ThrowOut();
+        newRock.damage = shootSpeed;
 
         yield return new WaitForSeconds(0.2f);
         CancelShoot();
@@ -112,6 +113,7 @@ public class PlayerShoot : MonoBehaviour{
         newArrow.SetFlySpeed(shootSpeed);
         newArrow.SetTarget(target);
         newArrow.ThrowOut();
+        newArrow.damage = shootSpeed;
 
         audioSource.clip = audioClips[1];
         audioSource.Play();

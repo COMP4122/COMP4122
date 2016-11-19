@@ -10,6 +10,7 @@ TagManager:
   - Invisible
   - Navigation
   - Airwall
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Ground
   - Invisible
   - Rock
-  - 
+  - Projectile
   - 
   - 
   - 
