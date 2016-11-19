@@ -218,9 +218,9 @@ public class AnimalController : MonoBehaviour {
     // This function is to detect that player's weapon hits the animal
     void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.tag == "Arrow") {
-            ArrowController ac = collision.gameObject.GetComponent<ArrowController>();
-            float ratio = collision.relativeVelocity.magnitude / ac.maxSpeed;
-            TakeDamage(ac.maxDamage * ratio);
+            Projectile ac = collision.gameObject.GetComponent<Projectile>();
+            // float ratio = collision.relativeVelocity.magnitude / ac.flySpeed;
+            TakeDamage(ac.damage);
         }
     }
 

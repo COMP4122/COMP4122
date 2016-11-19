@@ -4,7 +4,7 @@ public class Projectile : MonoBehaviour{
 
     public float damage;
 
-    private float flySpeed;
+    public float flySpeed;
     private Vector3 direction;
     private bool flying = false;
     private Rigidbody rb;

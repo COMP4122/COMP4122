@@ -10,9 +10,9 @@ public class PlayerShoot : MonoBehaviour{
     public GameObject arrowInHand;
     public Projectile arrow;
 
-    public float shootSpeed = 0f;
-    public float maxShootSpeed = 50f;
-    public float shootSpeedIncreaseRate = 10f;
+    private float shootSpeed = 0f;
+    private float maxShootSpeed = 50f;
+    private float shootSpeedIncreaseRate = 50f;
 
     private Animator animator;
     private bool shooting = false;
@@ -26,6 +26,10 @@ public class PlayerShoot : MonoBehaviour{
     }
 
     void Update() {
+        if (Input.GetKeyDown(KeyCode.Tab)) {
+            SwitchMode();
+        }
+
         if (Input.GetMouseButtonDown(0) && !shooting) {
             shooting = true;
             switch (shootMode) {
@@ -48,9 +52,9 @@ public class PlayerShoot : MonoBehaviour{
 
     void ShootingMode() {
         if (Input.GetMouseButton(0)) {
-            if (shootSpeed <= maxShootSpeed)
+            if (shootSpeed < maxShootSpeed)
                 shootSpeed += shootSpeedIncreaseRate * Time.deltaTime;
-            if (shootSpeed > 10f)
+            if (shootSpeed >= maxShootSpeed)
                 switch (shootMode) {
                     case ShootMode.Rock:
                         animator.SetTrigger("HoldRock");
@@ -96,7 +100,7 @@ public class PlayerShoot : MonoBehaviour{
         animator.SetTrigger("ShootOutArrow");
         Vector3 posForArrow = arrowInHand.transform.position;
         arrowInHand.SetActive(false);
-        Vector3 target = transform.position + camera.transform.forward * 50f;
+        Vector3 target = arrowInHand.transform.position + arrowInHand.transform.up * 50f;
 
         Projectile newArrow = (Projectile) Instantiate(arrow, posForArrow, new Quaternion(0f, 0f, 0f, 0f));
         newArrow.transform.position = arrowInHand.transform.position;
@@ -122,6 +126,19 @@ public class PlayerShoot : MonoBehaviour{
         }
     }
 
+    void SwitchMode() {
+        if (shootMode == ShootMode.Rock) {
+            shooting = false;
+            shootSpeed = 0f;
+            shootMode = ShootMode.Bow;
+            maxShootSpeed = 100f;
+        } else {
+            shooting = false;
+            shootSpeed = 0f;
+            shootMode = ShootMode.Rock;
+            maxShootSpeed = 50f;
+        }
+    }
 
 
 
