@@ -19,8 +19,8 @@ public class PlayerShoot : MonoBehaviour{
 
     private Animator animator;
     private bool shooting = false;
-    private enum ShootMode {Rock, Bow}
-    private ShootMode shootMode = ShootMode.Bow;
+    public enum ShootMode {Rock, Bow}
+    public ShootMode shootMode = ShootMode.Bow;
 
     void Start() {
         animator = GetComponent<Animator>();

@@ -36,6 +36,6 @@ public class TestEnemy : MonoBehaviour {
 
     void Die() {
         Instantiate(meat, transform.position, transform.rotation);
-        Destroy(this.gameObject);
+        Destroy(this.gameObject, 2);
     }
 }

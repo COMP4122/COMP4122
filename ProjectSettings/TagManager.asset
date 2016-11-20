@@ -11,6 +11,7 @@ TagManager:
   - Navigation
   - Airwall
   - Projectile
+  - Meat
   layers:
   - Default
   - TransparentFX

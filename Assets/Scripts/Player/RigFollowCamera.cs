@@ -9,7 +9,6 @@ public class RigFollowCamera : MonoBehaviour {
 
 
     void Update () {
-        Debug.Log(camera.transform.rotation);
         transform.rotation = camera.transform.rotation;
         transform.Rotate(transform.forward, -90f, Space.World);
     }
