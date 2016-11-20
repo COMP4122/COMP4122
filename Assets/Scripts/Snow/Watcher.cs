@@ -26,7 +26,6 @@ public class Watcher : MonoBehaviour {
             player.transform.position = position;
             player.transform.rotation = rotation;
         }
-        StartCoroutine(AutoSave());
     }
 
     void Update() {
@@ -36,12 +35,6 @@ public class Watcher : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.X)) {
             dc.Load();
         }
-        if (Input.GetKeyDown(KeyCode.N)) {
-            if (SceneManager.GetActiveScene().name == "Snow")
-                SceneManager.LoadScene("Camp");
-            if (SceneManager.GetActiveScene().name == "Camp")
-                SceneManager.LoadScene("Snow");
-        }
         if (Input.GetKeyDown(KeyCode.M)) {
             Debug.Log(data.meatCount+" "+data.totalNumberOfMeat);
         }
@@ -50,10 +43,20 @@ public class Watcher : MonoBehaviour {
         }
     }
 
-    IEnumerator AutoSave() {
+    /*IEnumerator AutoSave() {
         while (true) {
             yield return new WaitForSeconds(autoSaveDuration);
             Save();
+        }
+    }*/
+
+    public void SetHealth(float health) {
+        data.health = health;
+        if (health <= 0) {
+            data.meatCount = 0;
+            data.health = 100f;
+            data.survivorCount -= 1;
+            dc.ChangeScene(data, "Camp");
         }
     }
 

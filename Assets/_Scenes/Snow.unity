@@ -4267,6 +4267,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 753102555}
+  - component: {fileID: 753102556}
   m_Layer: 0
   m_Name: EndPoint
   m_TagString: Untagged
@@ -4289,6 +4290,18 @@ Transform:
   m_Father: {fileID: 128552584}
   m_RootOrder: 115
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &753102556
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 753102554}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2280664, y: 3.1467915, z: 4.6197205}
+  m_Center: {x: 1.3501625, y: 3.5713902, z: 0.31126404}
 --- !u!1001 &762464363
 Prefab:
   m_ObjectHideFlags: 0
@@ -7536,7 +7549,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -205370040
+  randomSeed: -2111655771
   InitialModule:
     serializedVersion: 3
     enabled: 1

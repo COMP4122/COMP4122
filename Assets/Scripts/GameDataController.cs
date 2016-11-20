@@ -53,9 +53,24 @@ public class GameDataController : MonoBehaviour {
     public void GameOver() {
         StartCoroutine(GameOverRoutine());
     }
+
+    public void ChangeScene(GameData newData, string sceneName) {
+        data = newData;
+        if (sceneName == "Camp") {
+            data.sceneName = "Camp";
+            data.position[0] = 35f;
+            data.position[1] = 0f;
+            data.position[2] = 44f;
+        }
+        SceneManager.LoadScene(sceneName);
+    }
     
     public string getSaveFilePath() {
         return Application.persistentDataPath + "/save1.save";
+    }
+
+    public void SetData(GameData newData) {
+        data = newData;
     }
 
     public GameData getData() {
@@ -78,7 +93,7 @@ public class GameDataController : MonoBehaviour {
         data = new GameData();
 
         data.sceneName = "Camp";
-        data.health = 3;
+        data.health = 100f;
         data.WeaponMode = ShootMode.Rock;
         data.dayCount = 0;
         data.meatCount = 0;
