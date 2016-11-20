@@ -1,0 +1,825 @@
+fileFormatVersion: 2
+guid: f2dd342ca0ebf4a4095b34fb68a8bb53
+timeCreated: 1479496848
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: BackwardLeftLeg
+    100004: BackwardLeftLeg2
+    100006: BackwardLeftLeg2_001
+    100008: BackwardLeftLeg3
+    100010: BackwardLeftLeg3_001
+    100012: BackwardLeftLeg3_002
+    100014: BackwardRightLeg
+    100016: BackwardRightLeg2
+    100018: BackwardRightLeg2_001
+    100020: BackwardRightLeg3
+    100022: BackwardRightLeg3_001
+    100024: BackwardRightLeg3_002
+    100026: BakcBody
+    100028: //RootNode
+    100030: Bone_007
+    100032: ForwardLeftLeg
+    100034: ForwardLeftLeg2
+    100036: ForwardLeftLeg3
+    100038: ForwardLeftLeg3_001
+    100040: ForwardLeftLeg3_002
+    100042: ForwardLeftLeg4
+    100044: ForwardRightLeg
+    100046: ForwardRightLeg3
+    100048: ForwardRightLeg3_001
+    100050: ForwardRightLeg3_002
+    100052: ForwardRightLeg4
+    100054: Head
+    100056: Head_end
+    100058: Neck
+    100060: Plane
+    100062: Tail1
+    100064: Tail2
+    100066: Tail2_end
+    400000: Armature
+    400002: BackwardLeftLeg
+    400004: BackwardLeftLeg2
+    400006: BackwardLeftLeg2_001
+    400008: BackwardLeftLeg3
+    400010: BackwardLeftLeg3_001
+    400012: BackwardLeftLeg3_002
+    400014: BackwardRightLeg
+    400016: BackwardRightLeg2
+    400018: BackwardRightLeg2_001
+    400020: BackwardRightLeg3
+    400022: BackwardRightLeg3_001
+    400024: BackwardRightLeg3_002
+    400026: BakcBody
+    400028: //RootNode
+    400030: Bone_007
+    400032: ForwardLeftLeg
+    400034: ForwardLeftLeg2
+    400036: ForwardLeftLeg3
+    400038: ForwardLeftLeg3_001
+    400040: ForwardLeftLeg3_002
+    400042: ForwardLeftLeg4
+    400044: ForwardRightLeg
+    400046: ForwardRightLeg3
+    400048: ForwardRightLeg3_001
+    400050: ForwardRightLeg3_002
+    400052: ForwardRightLeg4
+    400054: Head
+    400056: Head_end
+    400058: Neck
+    400060: Plane
+    400062: Tail1
+    400064: Tail2
+    400066: Tail2_end
+    4300000: Plane
+    7400000: Default Take
+    7400002: Dead
+    7400004: Running
+    7400006: Walking
+    7400008: Warning
+    7400010: Idle
+    7400012: Attack
+    9500000: //RootNode
+    13700000: Plane
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackwardLeftLeg3_002
+        weight: 1
+      - path: Armature/BackwardRightLeg3_002
+        weight: 1
+      - path: Armature/BakcBody
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001/BackwardLeftLeg3
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001/BackwardLeftLeg3/BackwardLeftLeg3_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001/BackwardRightLeg3
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001/BackwardRightLeg3/BackwardRightLeg3_001
+        weight: 1
+      - path: Armature/BakcBody/Tail1
+        weight: 1
+      - path: Armature/BakcBody/Tail1/Tail2
+        weight: 1
+      - path: Armature/BakcBody/Tail1/Tail2/Tail2_end
+        weight: 1
+      - path: Armature/ForwardLeftLeg
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3/ForwardLeftLeg3_001
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3/ForwardLeftLeg3_001/ForwardLeftLeg4
+        weight: 1
+      - path: Armature/ForwardLeftLeg3_002
+        weight: 1
+      - path: Armature/ForwardRightLeg
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3/ForwardRightLeg3_001
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3/ForwardRightLeg3_001/ForwardRightLeg4
+        weight: 1
+      - path: Armature/ForwardRightLeg3_002
+        weight: 1
+      - path: Armature/Neck
+        weight: 1
+      - path: Armature/Neck/Head
+        weight: 1
+      - path: Armature/Neck/Head/Head_end
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Dead
+      takeName: Dead
+      firstFrame: -1
+      lastFrame: 34
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackwardLeftLeg3_002
+        weight: 1
+      - path: Armature/BackwardRightLeg3_002
+        weight: 1
+      - path: Armature/BakcBody
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001/BackwardLeftLeg3
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001/BackwardLeftLeg3/BackwardLeftLeg3_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001/BackwardRightLeg3
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001/BackwardRightLeg3/BackwardRightLeg3_001
+        weight: 1
+      - path: Armature/BakcBody/Tail1
+        weight: 1
+      - path: Armature/BakcBody/Tail1/Tail2
+        weight: 1
+      - path: Armature/BakcBody/Tail1/Tail2/Tail2_end
+        weight: 1
+      - path: Armature/ForwardLeftLeg
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3/ForwardLeftLeg3_001
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3/ForwardLeftLeg3_001/ForwardLeftLeg4
+        weight: 1
+      - path: Armature/ForwardLeftLeg3_002
+        weight: 1
+      - path: Armature/ForwardRightLeg
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3/ForwardRightLeg3_001
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3/ForwardRightLeg3_001/ForwardRightLeg4
+        weight: 1
+      - path: Armature/ForwardRightLeg3_002
+        weight: 1
+      - path: Armature/Neck
+        weight: 1
+      - path: Armature/Neck/Head
+        weight: 1
+      - path: Armature/Neck/Head/Head_end
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: -1
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackwardLeftLeg3_002
+        weight: 1
+      - path: Armature/BackwardRightLeg3_002
+        weight: 1
+      - path: Armature/BakcBody
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001/BackwardLeftLeg3
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001/BackwardLeftLeg3/BackwardLeftLeg3_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001/BackwardRightLeg3
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001/BackwardRightLeg3/BackwardRightLeg3_001
+        weight: 1
+      - path: Armature/BakcBody/Tail1
+        weight: 1
+      - path: Armature/BakcBody/Tail1/Tail2
+        weight: 1
+      - path: Armature/BakcBody/Tail1/Tail2/Tail2_end
+        weight: 1
+      - path: Armature/ForwardLeftLeg
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3/ForwardLeftLeg3_001
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3/ForwardLeftLeg3_001/ForwardLeftLeg4
+        weight: 1
+      - path: Armature/ForwardLeftLeg3_002
+        weight: 1
+      - path: Armature/ForwardRightLeg
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3/ForwardRightLeg3_001
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3/ForwardRightLeg3_001/ForwardRightLeg4
+        weight: 1
+      - path: Armature/ForwardRightLeg3_002
+        weight: 1
+      - path: Armature/Neck
+        weight: 1
+      - path: Armature/Neck/Head
+        weight: 1
+      - path: Armature/Neck/Head/Head_end
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Running
+      takeName: Running
+      firstFrame: -1
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackwardLeftLeg3_002
+        weight: 1
+      - path: Armature/BackwardRightLeg3_002
+        weight: 1
+      - path: Armature/BakcBody
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001/BackwardLeftLeg3
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001/BackwardLeftLeg3/BackwardLeftLeg3_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001/BackwardRightLeg3
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001/BackwardRightLeg3/BackwardRightLeg3_001
+        weight: 1
+      - path: Armature/BakcBody/Tail1
+        weight: 1
+      - path: Armature/BakcBody/Tail1/Tail2
+        weight: 1
+      - path: Armature/BakcBody/Tail1/Tail2/Tail2_end
+        weight: 1
+      - path: Armature/ForwardLeftLeg
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3/ForwardLeftLeg3_001
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3/ForwardLeftLeg3_001/ForwardLeftLeg4
+        weight: 1
+      - path: Armature/ForwardLeftLeg3_002
+        weight: 1
+      - path: Armature/ForwardRightLeg
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3/ForwardRightLeg3_001
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3/ForwardRightLeg3_001/ForwardRightLeg4
+        weight: 1
+      - path: Armature/ForwardRightLeg3_002
+        weight: 1
+      - path: Armature/Neck
+        weight: 1
+      - path: Armature/Neck/Head
+        weight: 1
+      - path: Armature/Neck/Head/Head_end
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack
+      takeName: Attack
+      firstFrame: -1
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackwardLeftLeg3_002
+        weight: 1
+      - path: Armature/BackwardRightLeg3_002
+        weight: 1
+      - path: Armature/BakcBody
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001/BackwardLeftLeg3
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001/BackwardLeftLeg3/BackwardLeftLeg3_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001/BackwardRightLeg3
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001/BackwardRightLeg3/BackwardRightLeg3_001
+        weight: 1
+      - path: Armature/BakcBody/Tail1
+        weight: 1
+      - path: Armature/BakcBody/Tail1/Tail2
+        weight: 1
+      - path: Armature/BakcBody/Tail1/Tail2/Tail2_end
+        weight: 1
+      - path: Armature/ForwardLeftLeg
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3/ForwardLeftLeg3_001
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3/ForwardLeftLeg3_001/ForwardLeftLeg4
+        weight: 1
+      - path: Armature/ForwardLeftLeg3_002
+        weight: 1
+      - path: Armature/ForwardRightLeg
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3/ForwardRightLeg3_001
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3/ForwardRightLeg3_001/ForwardRightLeg4
+        weight: 1
+      - path: Armature/ForwardRightLeg3_002
+        weight: 1
+      - path: Armature/Neck
+        weight: 1
+      - path: Armature/Neck/Head
+        weight: 1
+      - path: Armature/Neck/Head/Head_end
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walking
+      takeName: Walking
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackwardLeftLeg3_002
+        weight: 1
+      - path: Armature/BackwardRightLeg3_002
+        weight: 1
+      - path: Armature/BakcBody
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001/BackwardLeftLeg3
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001/BackwardLeftLeg3/BackwardLeftLeg3_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001/BackwardRightLeg3
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001/BackwardRightLeg3/BackwardRightLeg3_001
+        weight: 1
+      - path: Armature/BakcBody/Tail1
+        weight: 1
+      - path: Armature/BakcBody/Tail1/Tail2
+        weight: 1
+      - path: Armature/BakcBody/Tail1/Tail2/Tail2_end
+        weight: 1
+      - path: Armature/ForwardLeftLeg
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3/ForwardLeftLeg3_001
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3/ForwardLeftLeg3_001/ForwardLeftLeg4
+        weight: 1
+      - path: Armature/ForwardLeftLeg3_002
+        weight: 1
+      - path: Armature/ForwardRightLeg
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3/ForwardRightLeg3_001
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3/ForwardRightLeg3_001/ForwardRightLeg4
+        weight: 1
+      - path: Armature/ForwardRightLeg3_002
+        weight: 1
+      - path: Armature/Neck
+        weight: 1
+      - path: Armature/Neck/Head
+        weight: 1
+      - path: Armature/Neck/Head/Head_end
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Warning
+      takeName: Warning
+      firstFrame: -1
+      lastFrame: 239
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackwardLeftLeg3_002
+        weight: 1
+      - path: Armature/BackwardRightLeg3_002
+        weight: 1
+      - path: Armature/BakcBody
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001/BackwardLeftLeg3
+        weight: 1
+      - path: Armature/BakcBody/BackwardLeftLeg/BackwardLeftLeg2/BackwardLeftLeg2_001/BackwardLeftLeg3/BackwardLeftLeg3_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001/BackwardRightLeg3
+        weight: 1
+      - path: Armature/BakcBody/BackwardRightLeg/BackwardRightLeg2/BackwardRightLeg2_001/BackwardRightLeg3/BackwardRightLeg3_001
+        weight: 1
+      - path: Armature/BakcBody/Tail1
+        weight: 1
+      - path: Armature/BakcBody/Tail1/Tail2
+        weight: 1
+      - path: Armature/BakcBody/Tail1/Tail2/Tail2_end
+        weight: 1
+      - path: Armature/ForwardLeftLeg
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3/ForwardLeftLeg3_001
+        weight: 1
+      - path: Armature/ForwardLeftLeg/ForwardLeftLeg2/ForwardLeftLeg3/ForwardLeftLeg3_001/ForwardLeftLeg4
+        weight: 1
+      - path: Armature/ForwardLeftLeg3_002
+        weight: 1
+      - path: Armature/ForwardRightLeg
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3/ForwardRightLeg3_001
+        weight: 1
+      - path: Armature/ForwardRightLeg/Bone_007/ForwardRightLeg3/ForwardRightLeg3_001/ForwardRightLeg4
+        weight: 1
+      - path: Armature/ForwardRightLeg3_002
+        weight: 1
+      - path: Armature/Neck
+        weight: 1
+      - path: Armature/Neck/Head
+        weight: 1
+      - path: Armature/Neck/Head/Head_end
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11,3 +11,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/Camp.unity
   - enabled: 1
     path: Assets/_Scenes/Menu.unity
+  - enabled: 1
+    path: Assets/_Scenes/Forest.unity
+  - enabled: 1
+    path: Assets/_Scenes/desert.unity

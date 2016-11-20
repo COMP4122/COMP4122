@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: a09cdff38ae0ba2498a461f4269ac579
+timeCreated: 1479544825
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: BackwardLeftLeg
+    100004: BackwardLeftLeg2
+    100006: BackwardLeftLeg2.001
+    100008: BackwardLeftLeg3
+    100010: BackwardLeftLeg3.001
+    100012: BackwardLeftLeg3.001_end
+    100014: BackwardLeftLeg3.002
+    100016: BackwardLeftLeg3.002_end
+    100018: BackwardRightLeg
+    100020: BackwardRightLeg2
+    100022: BackwardRightLeg2.001
+    100024: BackwardRightLeg3
+    100026: BackwardRightLeg3.001
+    100028: BackwardRightLeg3.001_end
+    100030: BackwardRightLeg3.002
+    100032: BackwardRightLeg3.002_end
+    100034: BakcBody
+    100036: //RootNode
+    100038: Bone.007
+    100040: Camera
+    100042: ForwardLeftLeg
+    100044: ForwardLeftLeg2
+    100046: ForwardLeftLeg3
+    100048: ForwardLeftLeg3.001
+    100050: ForwardLeftLeg3.002
+    100052: ForwardLeftLeg3.002_end
+    100054: ForwardLeftLeg4
+    100056: ForwardLeftLeg4_end
+    100058: ForwardRightLeg
+    100060: ForwardRightLeg3
+    100062: ForwardRightLeg3.001
+    100064: ForwardRightLeg3.002
+    100066: ForwardRightLeg3.002_end
+    100068: ForwardRightLeg4
+    100070: ForwardRightLeg4_end
+    100072: Head
+    100074: Head_end
+    100076: Head_end_end
+    100078: Lamp
+    100080: Neck
+    100082: Plane
+    100084: Tail1
+    100086: Tail2
+    100088: Tail2_end
+    100090: Tail2_end_end
+    400000: Armature
+    400002: BackwardLeftLeg
+    400004: BackwardLeftLeg2
+    400006: BackwardLeftLeg2.001
+    400008: BackwardLeftLeg3
+    400010: BackwardLeftLeg3.001
+    400012: BackwardLeftLeg3.001_end
+    400014: BackwardLeftLeg3.002
+    400016: BackwardLeftLeg3.002_end
+    400018: BackwardRightLeg
+    400020: BackwardRightLeg2
+    400022: BackwardRightLeg2.001
+    400024: BackwardRightLeg3
+    400026: BackwardRightLeg3.001
+    400028: BackwardRightLeg3.001_end
+    400030: BackwardRightLeg3.002
+    400032: BackwardRightLeg3.002_end
+    400034: BakcBody
+    400036: //RootNode
+    400038: Bone.007
+    400040: Camera
+    400042: ForwardLeftLeg
+    400044: ForwardLeftLeg2
+    400046: ForwardLeftLeg3
+    400048: ForwardLeftLeg3.001
+    400050: ForwardLeftLeg3.002
+    400052: ForwardLeftLeg3.002_end
+    400054: ForwardLeftLeg4
+    400056: ForwardLeftLeg4_end
+    400058: ForwardRightLeg
+    400060: ForwardRightLeg3
+    400062: ForwardRightLeg3.001
+    400064: ForwardRightLeg3.002
+    400066: ForwardRightLeg3.002_end
+    400068: ForwardRightLeg4
+    400070: ForwardRightLeg4_end
+    400072: Head
+    400074: Head_end
+    400076: Head_end_end
+    400078: Lamp
+    400080: Neck
+    400082: Plane
+    400084: Tail1
+    400086: Tail2
+    400088: Tail2_end
+    400090: Tail2_end_end
+    4300000: Plane
+    7400000: Armature|Dead
+    7400002: Armature|Idle
+    7400004: Armature|Running
+    7400006: Armature|Attack
+    7400008: Armature|Walking
+    7400010: Armature|Warning
+    9500000: //RootNode
+    13700000: Plane
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
