@@ -1731,13 +1731,14 @@ MonoBehaviour:
   hitRate: 0
   hitDamage: 0
   timeBeforeEscape: 10
-  meat: {fileID: 1000010787675184, guid: fe4ba9782abaac64283989fb5d72176f, type: 2}
+  meat: {fileID: 1390384828613138, guid: 5a5743728214e4faca7971a7b94a4564, type: 2}
   walkAudio: {fileID: 8300000, guid: 6bd243f26f991ef4face2ade7b372156, type: 3}
   roarAudio: {fileID: 0}
   runAudio: {fileID: 8300000, guid: 852ce36588a9a8143904006049ea9cb9, type: 3}
   attackAudio: {fileID: 0}
   hurtAudio: {fileID: 8300000, guid: 4b5ca8308ed213d42bf2ae1b60228924, type: 3}
   dieAudio: {fileID: 8300000, guid: 4b5ca8308ed213d42bf2ae1b60228924, type: 3}
+  hitAudio: {fileID: 0}
 --- !u!137 &137141459199610116
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
