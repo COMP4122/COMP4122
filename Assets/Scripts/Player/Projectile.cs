@@ -42,9 +42,12 @@ public class Projectile : MonoBehaviour{
 			if (canDealDamage) {
 				
 				if (collision.gameObject.tag == "Enemy") {
-					GetComponent<Rigidbody> ().useGravity = false;
-					GetComponent<Rigidbody> ().isKinematic = true;
-					transform.SetParent (collision.gameObject.transform);
+
+					if (type == ProjectileType.Arrow) {
+						GetComponent<Rigidbody> ().useGravity = false;
+						GetComponent<Rigidbody> ().isKinematic = true;
+						transform.SetParent (collision.gameObject.transform);
+					}
 
 					if (!playedSound) {
 						audioSource.clip = arrowHitAudio;
