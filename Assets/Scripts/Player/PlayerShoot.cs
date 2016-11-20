@@ -135,22 +135,20 @@ public class PlayerShoot : MonoBehaviour{
         }
     }
 
-    void SwitchMode() {
-        switch (shootMode) {
-            case ShootMode.Rock:
-                shooting = false;
-                shootSpeed = 0f;
-                maxShootSpeed = 120f;
-                break;
-            case ShootMode.Bow:
-                shooting = false;
-                shootSpeed = 0f;
-                maxShootSpeed = 50f;
-                break;
-        }
-    }
+	public void SwitchToBow() {
+		shooting = false;
+		shootSpeed = 0f;
+		maxShootSpeed = 120f;
+		shootMode = ShootMode.Bow;
+		bowInHand.SetActive (true);
+	}
 
+	public void SwitchToRock() {
+		shooting = false;
+		shootSpeed = 0f;
+		maxShootSpeed = 50f;
 
-
+		shootMode = ShootMode.Rock;
+	}
 
 }

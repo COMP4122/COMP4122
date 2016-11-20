@@ -14,23 +14,26 @@ public class PickupObject : MonoBehaviour {
 
     void OnTriggerStay(Collider collider) {
         
-        if (collider.gameObject.tag == "Meat") {
+        if (collider.gameObject.tag == "Item") {
             if (Input.GetKeyDown(KeyCode.F)) {
-                Meat meat = collider.gameObject.GetComponent<Meat>();
-                StartCoroutine(PickUpObjectCoroutine(meat));
+				Item itemToPickUp = collider.gameObject.GetComponent<Item>();
+				StartCoroutine(PickUpObjectCoroutine(itemToPickUp));
             }
         }
     }
 
-    IEnumerator PickUpObjectCoroutine(Meat meat) {
+    IEnumerator PickUpObjectCoroutine(Item item) {
         animator.SetBool("PickingUpObjects", true);
         yield return new WaitForSeconds(0.5f);
 
-		meat.gameObject.transform.SetParent (GameObject.Find ("ArmR2").transform);
+		item.gameObject.transform.SetParent (GameObject.Find ("ArmR2").transform);
+		if (item.gameObject.GetComponent<Animator> () != null) {
+			item.gameObject.GetComponent<Animator> ().enabled = false;
+		}
 
         yield return new WaitForSeconds(1f);
 
-		meat.GotPickedUp();
+		item.GotPickedUp();
 
         animator.SetBool("PickingUpObjects", false);
         StopCoroutine("PickUpObjectCoroutine");

@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Meat : MonoBehaviour {
+public class Meat : Item {
 
 	public int noOfFood;
+    // TODO
 
     // public GameDataController gameDataController;
 
@@ -12,7 +13,7 @@ public class Meat : MonoBehaviour {
         // gameDataController = GameObject.FindGameObjectsWithTag("GameDataController");
     }
 
-    public void GotPickedUp() {
+	public override void GotPickedUp() {
 
         // TODO: gameDataController method here
 

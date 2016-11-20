@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMovement : MonoBehaviour {
+public class OldPlayerMovement : MonoBehaviour {
 
     public float maxSpeed;
     public float jumpSpeed;
