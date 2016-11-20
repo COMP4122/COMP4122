@@ -43,12 +43,9 @@ public class Watcher : MonoBehaviour {
         }
     }
 
-    /*IEnumerator AutoSave() {
-        while (true) {
-            yield return new WaitForSeconds(autoSaveDuration);
-            Save();
-        }
-    }*/
+    public void ChangeScene(string sceneName) {
+        dc.ChangeScene(data, sceneName);
+    }
 
     public void SetHealth(float health) {
         data.health = health;
