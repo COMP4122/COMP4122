@@ -12,6 +12,7 @@ TagManager:
   - Airwall
   - Projectile
   - Meat
+  - SceneController
   layers:
   - Default
   - TransparentFX
