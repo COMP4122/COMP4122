@@ -5,11 +5,16 @@ using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameDataController : MonoBehaviour {
     public static GameDataController singleton;
     public string serverURL;
 
+    public GameObject canvas;
+    public Text saveText;
+    public InputField nameInput;
+    private Watcher watcher;
     private GameData data;
     private const int questNumber = 6;
 
@@ -23,6 +28,12 @@ public class GameDataController : MonoBehaviour {
         }
 	}
 
+    void Start() {
+        canvas = GameObject.Find("Canvas");
+        nameInput.gameObject.SetActive(false);
+        canvas.SetActive(false);
+    }
+
     public void NewGame() {
         InitData();
         SceneManager.LoadScene(data.sceneName);
@@ -34,6 +45,7 @@ public class GameDataController : MonoBehaviour {
         FileStream file = File.Create(getSaveFilePath());
         bf.Serialize(file, data);
         file.Close();
+        StartCoroutine(SaveSuccess());
     }
 
     public void Load() {
@@ -51,11 +63,35 @@ public class GameDataController : MonoBehaviour {
     }
 
     public void GameOver() {
-        StartCoroutine(GameOverRoutine());
+        canvas.SetActive(true);
+        nameInput.gameObject.SetActive(true);
+    }
+
+    public void OnEnteredName() {
+        if (nameInput.text == "")
+            return;
+        string name = nameInput.text;
+        nameInput.text = "";
+        StartCoroutine(GameOverRoutine(name));
+    }
+
+    public void ChangeScene(GameData newData, string sceneName) {
+        data = newData;
+        if (sceneName == "Camp") {
+            data.sceneName = "Camp";
+            data.position[0] = 35f;
+            data.position[1] = 0f;
+            data.position[2] = 44f;
+        }
+        SceneManager.LoadScene(sceneName);
     }
     
     public string getSaveFilePath() {
         return Application.persistentDataPath + "/save1.save";
+    }
+
+    public void SetData(GameData newData) {
+        data = newData;
     }
 
     public GameData getData() {
@@ -64,21 +100,39 @@ public class GameDataController : MonoBehaviour {
         return data;
     }
 
-    private IEnumerator GameOverRoutine() {
-        Debug.Log("Start game over");
-        int score = data.totalNumberOfMeat * 1 + data.dayCount * 5 + data.survivorCount * 10;
-        WWW www = new WWW(serverURL);
-        yield return www;
-        string result = www.text;
-        string[] entities = result.Split('#');  // FORMAT name:score
+    public void setWatcher(Watcher watcher) {
+        this.watcher = watcher;
+    }
 
+    public void CmdSave() {
+        watcher.Save();
+    }
+
+    public void GUIResume() {
+        watcher.DisableMenu();
+    }
+
+    private IEnumerator GameOverRoutine(string name) {
+        watcher.Save();
+        int score = data.totalNumberOfMeat * 1 + data.dayCount * 5 + data.survivorCount * 10;
+        WWW www = new WWW(serverURL + "?name=" + name + "&score=" + score);
+        yield return www;
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene("Menu");
+        canvas.SetActive(false);
+    }
+
+    IEnumerator SaveSuccess() {
+        saveText.text = "Game Saved";
+        yield return new WaitForSecondsRealtime(3);
+        saveText.text = "";
     }
 
     private void InitData() {
         data = new GameData();
 
         data.sceneName = "Camp";
-        data.health = 3;
+        data.health = 100f;
         data.WeaponMode = ShootMode.Rock;
         data.dayCount = 0;
         data.meatCount = 0;

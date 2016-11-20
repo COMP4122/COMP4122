@@ -16,6 +16,9 @@ public class PlayerShoot : MonoBehaviour{
     public AudioSource audioSource;
     public AudioClip[] audioClips;
 
+    private Watcher watcher;
+    private GameDataController dc;
+
     private float shootSpeed = 0f;
     private float maxShootSpeed = 30f;
     private float shootSpeedIncreaseRate = 50f;
@@ -26,6 +29,9 @@ public class PlayerShoot : MonoBehaviour{
     public ShootMode shootMode = ShootMode.Rock;
 
     void Start() {
+        watcher = GameObject.FindGameObjectWithTag("SceneController").GetComponent<Watcher>();
+        dc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameDataController>();
+        SwitchShootMode();
         animator = GetComponent<Animator>();
         rockInHand.SetActive(false);
         bowInHand.SetActive(false);
@@ -138,12 +144,18 @@ public class PlayerShoot : MonoBehaviour{
         }
     }
 
+    void SwitchShootMode() {
+        if (dc.getData().WeaponMode != shootMode)
+            SwitchToBow();
+    }
+
 	public void SwitchToBow() {
 		shooting = false;
 		shootSpeed = 0f;
 		maxShootSpeed = 120f;
 		shootMode = ShootMode.Bow;
 		bowInHand.SetActive (true);
+        watcher.SetWeaponMode(shootMode);
 	}
 
 	public void SwitchToRock() {
@@ -152,6 +164,7 @@ public class PlayerShoot : MonoBehaviour{
 		maxShootSpeed = 30f;
 
 		shootMode = ShootMode.Rock;
-	}
+        watcher.SetWeaponMode(shootMode);
+    }
 
 }
