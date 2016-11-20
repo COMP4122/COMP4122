@@ -17,13 +17,13 @@ public class PlayerShoot : MonoBehaviour{
     public AudioClip[] audioClips;
 
     private float shootSpeed = 0f;
-    private float maxShootSpeed = 120f;
+    private float maxShootSpeed = 30f;
     private float shootSpeedIncreaseRate = 50f;
 
     private Animator animator;
     private bool shooting = false;
     
-    public ShootMode shootMode = ShootMode.Bow;
+    public ShootMode shootMode = ShootMode.Rock;
 
     void Start() {
         animator = GetComponent<Animator>();
@@ -138,22 +138,20 @@ public class PlayerShoot : MonoBehaviour{
         }
     }
 
-    void SwitchMode() {
-        switch (shootMode) {
-            case ShootMode.Rock:
-                shooting = false;
-                shootSpeed = 0f;
-                maxShootSpeed = 120f;
-                break;
-            case ShootMode.Bow:
-                shooting = false;
-                shootSpeed = 0f;
-                maxShootSpeed = 50f;
-                break;
-        }
-    }
+	public void SwitchToBow() {
+		shooting = false;
+		shootSpeed = 0f;
+		maxShootSpeed = 120f;
+		shootMode = ShootMode.Bow;
+		bowInHand.SetActive (true);
+	}
 
+	public void SwitchToRock() {
+		shooting = false;
+		shootSpeed = 0f;
+		maxShootSpeed = 30f;
 
-
+		shootMode = ShootMode.Rock;
+	}
 
 }

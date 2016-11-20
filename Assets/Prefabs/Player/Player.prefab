@@ -494,6 +494,7 @@ GameObject:
   - component: {fileID: 114321978928139798}
   - component: {fileID: 114339940282996554}
   - component: {fileID: 65306527655509470}
+  - component: {fileID: 114043134117375718}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -936,8 +937,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1756237371160536}
-  m_LocalRotation: {x: -0, y: 0.9336664, z: -0, w: 0.3581439}
-  m_LocalPosition: {x: 41.4, y: 4.03, z: 63}
+  m_LocalRotation: {x: 0.026467755, y: 0.123233005, z: -0.0032879415, w: 0.99201936}
+  m_LocalPosition: {x: 28.8, y: 2.4, z: 2.2}
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children:
   - {fileID: 4633619882912452}
@@ -1393,7 +1394,7 @@ Skybox:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1854980491979356}
   m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: 9251246bd7a89b14cb67dc0f2c7808fe, type: 2}
+  m_CustomSkybox: {fileID: 0}
 --- !u!64 &64486578849210586
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1611,6 +1612,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114043134117375718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756237371160536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41b999d8c40047c884aecb0a50aeb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasWood: 0
+  hasRock: 0
 --- !u!114 &114321978928139798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1662,7 +1676,7 @@ MonoBehaviour:
   m_RunSpeed: 10
   m_RunstepLenghten: 0.7
   m_JumpSpeed: 10
-  m_StickToGroundForce: 10
+  m_StickToGroundForce: 5
   m_GravityMultiplier: 2
   m_MouseLook:
     XSensitivity: 2
@@ -1670,7 +1684,7 @@ MonoBehaviour:
     clampVerticalRotation: 1
     MinimumX: -90
     MaximumX: 90
-    smooth: 0
+    smooth: 1
     smoothTime: 5
     lockCursor: 1
   m_UseFovKick: 1
@@ -1759,7 +1773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f88253b5cc24a4868a4dc5c92668ef69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 1854980491979356}
   rockInHand: {fileID: 1747411042424886}
   rock: {fileID: 114183392750300168, guid: 94ed2a241bbeb409a8d22164a1d09ca2, type: 2}
   bowInHand: {fileID: 1666010430574246}
@@ -1769,7 +1783,7 @@ MonoBehaviour:
   audioClips:
   - {fileID: 8300000, guid: 10c95e451fa04403b9d9c122cb8d8af7, type: 3}
   - {fileID: 8300000, guid: b2519a8b5dc6f7448a6451ea2ede7bea, type: 3}
-  shootMode: 1
+  shootMode: 0
 --- !u!124 &124722308899657006
 Behaviour:
   m_ObjectHideFlags: 1
