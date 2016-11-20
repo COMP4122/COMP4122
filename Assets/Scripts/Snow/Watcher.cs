@@ -10,6 +10,11 @@ public class Watcher : MonoBehaviour {
     private GameDataController dc;  // Used to save/load/retrieve data
     private GameData data;  // See GameData.cs in DataStructure folder
     private GameObject player;
+    private GameObject dieCamera;
+
+    private bool playerDie = false;
+    private Vector3 dieCameraPosition;
+    private Quaternion dieCameraRotation;
 
     void Start() {
         dc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameDataController>();
@@ -26,6 +31,7 @@ public class Watcher : MonoBehaviour {
             player.transform.position = position;
             player.transform.rotation = rotation;
         }
+        PlayerDie();
     }
 
     void Update() {
@@ -41,6 +47,10 @@ public class Watcher : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Q)) {
             dc.GameOver();
         }
+        if (playerDie) {
+            dieCamera.transform.position = Vector3.Lerp(dieCamera.transform.position, dieCameraPosition, 0.01f);
+            dieCamera.transform.Rotate(new Vector3(0.35f, 0f, 0f));
+        }
     }
 
     public void ChangeScene(string sceneName) {
@@ -50,10 +60,7 @@ public class Watcher : MonoBehaviour {
     public void SetHealth(float health) {
         data.health = health;
         if (health <= 0) {
-            data.meatCount = 0;
-            data.health = 100f;
-            data.survivorCount -= 1;
-            dc.ChangeScene(data, "Camp");
+            StartCoroutine(PlayerDie());
         }
     }
 
@@ -64,6 +71,31 @@ public class Watcher : MonoBehaviour {
 
     public void subMeat(int number) {
         data.meatCount -= number;
+    }
+
+    public void SetWeaponMode(ShootMode mode) {
+        data.WeaponMode = mode;
+    }
+
+    public ShootMode getShootMode() {
+        return dc.getData().WeaponMode;
+    }
+
+    IEnumerator PlayerDie() {
+        player.SetActive(false);
+        dieCamera = new GameObject();
+        dieCamera.AddComponent<Camera>();
+        dieCamera.AddComponent<AudioListener>();
+        dieCamera.transform.position = player.transform.position;
+        dieCamera.transform.Translate(0f, 20f, 0f);
+        dieCameraPosition = dieCamera.transform.position;
+        dieCamera.transform.Translate(0f, -20f, 0f);
+        playerDie = true;
+        yield return new WaitForSeconds(5);
+        data.meatCount = 0;
+        data.health = 100f;
+        data.survivorCount -= 1;
+        dc.ChangeScene(data, "Camp");
     }
 
     private void Save() {

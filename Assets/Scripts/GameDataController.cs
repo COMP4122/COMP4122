@@ -80,13 +80,9 @@ public class GameDataController : MonoBehaviour {
     }
 
     private IEnumerator GameOverRoutine() {
-        Debug.Log("Start game over");
         int score = data.totalNumberOfMeat * 1 + data.dayCount * 5 + data.survivorCount * 10;
-        WWW www = new WWW(serverURL);
+        WWW www = new WWW(serverURL + "?name=" + "" + "&score=" + score);
         yield return www;
-        string result = www.text;
-        string[] entities = result.Split('#');  // FORMAT name:score
-
     }
 
     private void InitData() {
