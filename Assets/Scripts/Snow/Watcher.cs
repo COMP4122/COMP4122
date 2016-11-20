@@ -73,6 +73,7 @@ public class Watcher : MonoBehaviour {
         data.meatCount -= number;
     }
 
+<<<<<<< HEAD
     public void SetWeaponMode(ShootMode mode) {
         data.WeaponMode = mode;
     }
@@ -97,6 +98,11 @@ public class Watcher : MonoBehaviour {
         data.survivorCount -= 1;
         dc.ChangeScene(data, "Camp");
     }
+=======
+	public int GetSurvivorCount() {
+		return data.survivorCount;
+	}
+>>>>>>> refs/remotes/origin/master
 
     private void Save() {
         data.position[0] = player.transform.position.x;

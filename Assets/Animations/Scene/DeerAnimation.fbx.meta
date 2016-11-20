@@ -1,0 +1,1414 @@
+fileFormatVersion: 2
+guid: d1acf9779dbe4e340b96de4dd386a5ad
+timeCreated: 1479575875
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Armature.001
+    100004: BackBody
+    100006: Bone.007
+    100008: Camera
+    100010: Cube.001
+    100012: //RootNode
+    100014: FrontBody
+    100016: Head
+    100018: Horn
+    100020: Horn_end
+    100022: Horn_end_end
+    100024: Lamp
+    100026: LegBackwardLeft2
+    100028: LegBackwardLeft3
+    100030: LegBackwardLeft4
+    100032: LegBackwardLeft4.001
+    100034: LegBackwardLeft4.001_end
+    100036: LegBackwardLeft5
+    100038: LegBackwardLeft5_end
+    100040: LegBackwardLeft5_end_end
+    100042: LegBackwardRight
+    100044: LegBackwardRight2
+    100046: LegBackwardRight3
+    100048: LegBackwardRight4
+    100050: LegBackwardRight4.001
+    100052: LegBackwardRight4.001_end
+    100054: LegBackwardRight5
+    100056: LegBackwardRight5_end
+    100058: LegBackwardRight5_end_end
+    100060: LegForwardLeft
+    100062: LegForwardLeft2
+    100064: LegForwardLeft2.001
+    100066: LegForwardLeft2.001 1
+    100068: LegForwardLeft2.001_end
+    100070: LegForwardLeft3
+    100072: LegForwardLeft4
+    100074: LegForwardLeft4.001
+    100076: LegForwardLeft4.001_end
+    100078: LegForwardLeft5
+    100080: LegForwardLeft5_end
+    100082: LegForwardLeft5_end_end
+    100084: LegForwardRight
+    100086: LegForwardRight2
+    100088: LegForwardRight2.001
+    100090: LegForwardRight2.001 1
+    100092: LegForwardRight2.001_end
+    100094: LegForwardRight3
+    100096: LegForwardRight4
+    100098: LegForwardRight4.001
+    100100: LegForwardRight4.001_end
+    100102: LegForwardRight5
+    100104: LegForwardRight5_end
+    100106: LegForwardRight5_end_end
+    100108: Neck1
+    100110: Neck2
+    400000: Armature
+    400002: Armature.001
+    400004: BackBody
+    400006: Bone.007
+    400008: Camera
+    400010: Cube.001
+    400012: //RootNode
+    400014: FrontBody
+    400016: Head
+    400018: Horn
+    400020: Horn_end
+    400022: Horn_end_end
+    400024: Lamp
+    400026: LegBackwardLeft2
+    400028: LegBackwardLeft3
+    400030: LegBackwardLeft4
+    400032: LegBackwardLeft4.001
+    400034: LegBackwardLeft4.001_end
+    400036: LegBackwardLeft5
+    400038: LegBackwardLeft5_end
+    400040: LegBackwardLeft5_end_end
+    400042: LegBackwardRight
+    400044: LegBackwardRight2
+    400046: LegBackwardRight3
+    400048: LegBackwardRight4
+    400050: LegBackwardRight4.001
+    400052: LegBackwardRight4.001_end
+    400054: LegBackwardRight5
+    400056: LegBackwardRight5_end
+    400058: LegBackwardRight5_end_end
+    400060: LegForwardLeft
+    400062: LegForwardLeft2
+    400064: LegForwardLeft2.001
+    400066: LegForwardLeft2.001 1
+    400068: LegForwardLeft2.001_end
+    400070: LegForwardLeft3
+    400072: LegForwardLeft4
+    400074: LegForwardLeft4.001
+    400076: LegForwardLeft4.001_end
+    400078: LegForwardLeft5
+    400080: LegForwardLeft5_end
+    400082: LegForwardLeft5_end_end
+    400084: LegForwardRight
+    400086: LegForwardRight2
+    400088: LegForwardRight2.001
+    400090: LegForwardRight2.001 1
+    400092: LegForwardRight2.001_end
+    400094: LegForwardRight3
+    400096: LegForwardRight4
+    400098: LegForwardRight4.001
+    400100: LegForwardRight4.001_end
+    400102: LegForwardRight5
+    400104: LegForwardRight5_end
+    400106: LegForwardRight5_end_end
+    400108: Neck1
+    400110: Neck2
+    4300000: Cube.001
+    7400000: Armature.001|Dead
+    7400002: Armature|1111
+    7400004: Armature|3333
+    7400006: Armature|Dead
+    7400008: Armature|Eating
+    7400010: Armature|Running
+    7400012: Armature|Waiting
+    7400014: Armature|Walking
+    9500000: //RootNode
+    13700000: Cube.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature.001|Dead
+      takeName: Armature.001|Dead
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackBody
+        weight: 1
+      - path: Armature/BackBody/Bone.007
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end/LegBackwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end/LegForwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end/LegForwardRight5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end/Horn_end_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end/LegBackwardRight5_end_end
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001/LegBackwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegBackwardRight4.001
+        weight: 1
+      - path: Armature/LegBackwardRight4.001/LegBackwardRight4.001_end
+        weight: 1
+      - path: Armature/LegForwardLeft4.001
+        weight: 1
+      - path: Armature/LegForwardLeft4.001/LegForwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegForwardRight4.001
+        weight: 1
+      - path: Armature/LegForwardRight4.001/LegForwardRight4.001_end
+        weight: 1
+      - path: Armature.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001/LegForwardLeft2.001_end
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001/LegForwardRight2.001_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|1111
+      takeName: Armature|1111
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackBody
+        weight: 1
+      - path: Armature/BackBody/Bone.007
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end/LegBackwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end/LegForwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end/LegForwardRight5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end/Horn_end_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end/LegBackwardRight5_end_end
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001/LegBackwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegBackwardRight4.001
+        weight: 1
+      - path: Armature/LegBackwardRight4.001/LegBackwardRight4.001_end
+        weight: 1
+      - path: Armature/LegForwardLeft4.001
+        weight: 1
+      - path: Armature/LegForwardLeft4.001/LegForwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegForwardRight4.001
+        weight: 1
+      - path: Armature/LegForwardRight4.001/LegForwardRight4.001_end
+        weight: 1
+      - path: Armature.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001/LegForwardLeft2.001_end
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001/LegForwardRight2.001_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|3333
+      takeName: Armature|3333
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackBody
+        weight: 1
+      - path: Armature/BackBody/Bone.007
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end/LegBackwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end/LegForwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end/LegForwardRight5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end/Horn_end_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end/LegBackwardRight5_end_end
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001/LegBackwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegBackwardRight4.001
+        weight: 1
+      - path: Armature/LegBackwardRight4.001/LegBackwardRight4.001_end
+        weight: 1
+      - path: Armature/LegForwardLeft4.001
+        weight: 1
+      - path: Armature/LegForwardLeft4.001/LegForwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegForwardRight4.001
+        weight: 1
+      - path: Armature/LegForwardRight4.001/LegForwardRight4.001_end
+        weight: 1
+      - path: Armature.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001/LegForwardLeft2.001_end
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001/LegForwardRight2.001_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Dead
+      takeName: Armature|Dead
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackBody
+        weight: 1
+      - path: Armature/BackBody/Bone.007
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end/LegBackwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end/LegForwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end/LegForwardRight5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end/Horn_end_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end/LegBackwardRight5_end_end
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001/LegBackwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegBackwardRight4.001
+        weight: 1
+      - path: Armature/LegBackwardRight4.001/LegBackwardRight4.001_end
+        weight: 1
+      - path: Armature/LegForwardLeft4.001
+        weight: 1
+      - path: Armature/LegForwardLeft4.001/LegForwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegForwardRight4.001
+        weight: 1
+      - path: Armature/LegForwardRight4.001/LegForwardRight4.001_end
+        weight: 1
+      - path: Armature.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001/LegForwardLeft2.001_end
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001/LegForwardRight2.001_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Eating
+      takeName: Armature|Eating
+      firstFrame: 0
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackBody
+        weight: 1
+      - path: Armature/BackBody/Bone.007
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end/LegBackwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end/LegForwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end/LegForwardRight5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end/Horn_end_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end/LegBackwardRight5_end_end
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001/LegBackwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegBackwardRight4.001
+        weight: 1
+      - path: Armature/LegBackwardRight4.001/LegBackwardRight4.001_end
+        weight: 1
+      - path: Armature/LegForwardLeft4.001
+        weight: 1
+      - path: Armature/LegForwardLeft4.001/LegForwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegForwardRight4.001
+        weight: 1
+      - path: Armature/LegForwardRight4.001/LegForwardRight4.001_end
+        weight: 1
+      - path: Armature.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001/LegForwardLeft2.001_end
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001/LegForwardRight2.001_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Running
+      takeName: Armature|Running
+      firstFrame: 0
+      lastFrame: 44
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackBody
+        weight: 1
+      - path: Armature/BackBody/Bone.007
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end/LegBackwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end/LegForwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end/LegForwardRight5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end/Horn_end_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end/LegBackwardRight5_end_end
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001/LegBackwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegBackwardRight4.001
+        weight: 1
+      - path: Armature/LegBackwardRight4.001/LegBackwardRight4.001_end
+        weight: 1
+      - path: Armature/LegForwardLeft4.001
+        weight: 1
+      - path: Armature/LegForwardLeft4.001/LegForwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegForwardRight4.001
+        weight: 1
+      - path: Armature/LegForwardRight4.001/LegForwardRight4.001_end
+        weight: 1
+      - path: Armature.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001/LegForwardLeft2.001_end
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001/LegForwardRight2.001_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Waiting
+      takeName: Armature|Waiting
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackBody
+        weight: 1
+      - path: Armature/BackBody/Bone.007
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end/LegBackwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end/LegForwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end/LegForwardRight5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end/Horn_end_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end/LegBackwardRight5_end_end
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001/LegBackwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegBackwardRight4.001
+        weight: 1
+      - path: Armature/LegBackwardRight4.001/LegBackwardRight4.001_end
+        weight: 1
+      - path: Armature/LegForwardLeft4.001
+        weight: 1
+      - path: Armature/LegForwardLeft4.001/LegForwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegForwardRight4.001
+        weight: 1
+      - path: Armature/LegForwardRight4.001/LegForwardRight4.001_end
+        weight: 1
+      - path: Armature.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001/LegForwardLeft2.001_end
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001/LegForwardRight2.001_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Walking
+      takeName: Armature|Walking
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BackBody
+        weight: 1
+      - path: Armature/BackBody/Bone.007
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/Bone.007/LegBackwardLeft2/LegBackwardLeft3/LegBackwardLeft4/LegBackwardLeft5/LegBackwardLeft5_end/LegBackwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardLeft/LegForwardLeft2/LegForwardLeft2.001
+          1/LegForwardLeft3/LegForwardLeft4/LegForwardLeft5/LegForwardLeft5_end/LegForwardLeft5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/LegForwardRight/LegForwardRight2/LegForwardRight2.001
+          1/LegForwardRight3/LegForwardRight4/LegForwardRight5/LegForwardRight5_end/LegForwardRight5_end_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end
+        weight: 1
+      - path: Armature/BackBody/FrontBody/Neck1/Neck2/Head/Horn/Horn_end/Horn_end_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end
+        weight: 1
+      - path: Armature/BackBody/LegBackwardRight/LegBackwardRight2/LegBackwardRight3/LegBackwardRight4/LegBackwardRight5/LegBackwardRight5_end/LegBackwardRight5_end_end
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001
+        weight: 1
+      - path: Armature/LegBackwardLeft4.001/LegBackwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegBackwardRight4.001
+        weight: 1
+      - path: Armature/LegBackwardRight4.001/LegBackwardRight4.001_end
+        weight: 1
+      - path: Armature/LegForwardLeft4.001
+        weight: 1
+      - path: Armature/LegForwardLeft4.001/LegForwardLeft4.001_end
+        weight: 1
+      - path: Armature/LegForwardRight4.001
+        weight: 1
+      - path: Armature/LegForwardRight4.001/LegForwardRight4.001_end
+        weight: 1
+      - path: Armature.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001
+        weight: 1
+      - path: Armature.001/LegForwardLeft2.001/LegForwardLeft2.001_end
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001
+        weight: 1
+      - path: Armature.001/LegForwardRight2.001/LegForwardRight2.001_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 114081536250457400}
   m_Layer: 0
   m_Name: Boar
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -690,7 +690,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1382380909089732}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.296803, y: 0.86, z: -0.639}
+  m_LocalPosition: {x: 3.6631775, y: 3.94, z: -16.323036}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 4741499415279422}
@@ -947,7 +947,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1268416671599100}
   m_LocalRotation: {x: 0.47473988, y: 0.5142097, z: 0.4796995, w: 0.5292437}
-  m_LocalPosition: {x: -0.76, y: 0.47, z: 1.89}
+  m_LocalPosition: {x: -0.08, y: 0.46, z: 1.9}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 4249046840921916}
@@ -1171,7 +1171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0096694b7ff57a48864ee54d1e8be8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 130
   walkSpeed: 2
   runSpeed: 5
   detectDistance: 10
@@ -1179,13 +1179,14 @@ MonoBehaviour:
   hitRate: 3
   hitDamage: 30
   timeBeforeEscape: 0
-  meat: {fileID: 0}
+  meat: {fileID: 1390384828613138, guid: 5a5743728214e4faca7971a7b94a4564, type: 2}
   walkAudio: {fileID: 8300000, guid: 6bd243f26f991ef4face2ade7b372156, type: 3}
   roarAudio: {fileID: 8300000, guid: c5f1447118d929541bbe2a96cf7affd8, type: 3}
   runAudio: {fileID: 8300000, guid: 852ce36588a9a8143904006049ea9cb9, type: 3}
   attackAudio: {fileID: 8300000, guid: c5f1447118d929541bbe2a96cf7affd8, type: 3}
   hurtAudio: {fileID: 8300000, guid: b0eb718c6d85ca44f8489751b4786778, type: 3}
   dieAudio: {fileID: 8300000, guid: b0eb718c6d85ca44f8489751b4786778, type: 3}
+  hitAudio: {fileID: 0}
 --- !u!136 &136974052180348880
 CapsuleCollider:
   m_ObjectHideFlags: 1
