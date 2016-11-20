@@ -5,18 +5,18 @@ using UnityEngine;
 public class Meat : Item {
 
 	public int noOfFood;
-    // TODO
+    private Watcher watcher;
 
     // public GameDataController gameDataController;
 
     void Start() {
-        // gameDataController = GameObject.FindGameObjectsWithTag("GameDataController");
+        watcher = GameObject.FindGameObjectWithTag("SceneController").GetComponent<Watcher>();
     }
 
 	public override void GotPickedUp() {
 
         // TODO: gameDataController method here
-
+        watcher.addMeat(noOfFood);
         Destroy(this.gameObject);
 
     }

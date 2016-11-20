@@ -15,6 +15,9 @@ public class GameData {
     // Player's health
     public int health;
 
+    // Player's weapon mode
+    public ShootMode WeaponMode = ShootMode.Rock;
+
     // Number of days player has survived
     public int dayCount;
 

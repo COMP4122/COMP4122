@@ -13,6 +13,9 @@ TagManager:
   - Projectile
   - Item
   - Water
+  - Meat
+  - SceneController
+
   layers:
   - Default
   - TransparentFX

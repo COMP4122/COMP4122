@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class GameDataController : MonoBehaviour {
     public static GameDataController singleton;
+    public string serverURL;
 
     private GameData data;
     private const int questNumber = 6;
@@ -27,18 +28,18 @@ public class GameDataController : MonoBehaviour {
         SceneManager.LoadScene(data.sceneName);
     }
 
-    public void Save(GameData newData, int index) {
+    public void Save(GameData newData) {
         data = newData;
         BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Create(getSaveFilePath(index));
+        FileStream file = File.Create(getSaveFilePath());
         bf.Serialize(file, data);
         file.Close();
     }
 
-    public void Load(int index) {
-        if (File.Exists(getSaveFilePath(index))) {
+    public void Load() {
+        if (File.Exists(getSaveFilePath())) {
             BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Open(getSaveFilePath(index), FileMode.Open);
+            FileStream file = File.Open(getSaveFilePath(), FileMode.Open);
             data = (GameData)bf.Deserialize(file);
             file.Close();
             SceneManager.LoadScene(data.sceneName);
@@ -50,17 +51,27 @@ public class GameDataController : MonoBehaviour {
     }
 
     public void GameOver() {
-        int score = data.totalNumberOfMeat * 1 + data.dayCount * 5 + data.survivorCount * 10;
+        StartCoroutine(GameOverRoutine());
     }
-
-    public string getSaveFilePath(int index) {
-        return Application.persistentDataPath + "/save" + index + ".save";
+    
+    public string getSaveFilePath() {
+        return Application.persistentDataPath + "/save1.save";
     }
 
     public GameData getData() {
         if (data == null)
-            Load(1);
+            Load();
         return data;
+    }
+
+    private IEnumerator GameOverRoutine() {
+        Debug.Log("Start game over");
+        int score = data.totalNumberOfMeat * 1 + data.dayCount * 5 + data.survivorCount * 10;
+        WWW www = new WWW(serverURL);
+        yield return www;
+        string result = www.text;
+        string[] entities = result.Split('#');  // FORMAT name:score
+
     }
 
     private void InitData() {
@@ -68,6 +79,7 @@ public class GameDataController : MonoBehaviour {
 
         data.sceneName = "Camp";
         data.health = 3;
+        data.WeaponMode = ShootMode.Rock;
         data.dayCount = 0;
         data.meatCount = 0;
         data.survivorCount = 3;
