@@ -5,7 +5,7 @@ public class Projectile : MonoBehaviour{
     public float damage;
     public enum ProjectileType {Rock, Arrow}
     public ProjectileType type = ProjectileType.Arrow;
-    public AudioClip arrowHitAudio;
+    public AudioClip arrowHitAudio, dropInWaterAudio;
     public bool canDealDamage = true;
 
     private bool playedSound = false;
@@ -33,37 +33,61 @@ public class Projectile : MonoBehaviour{
     }
 
     void OnCollisionEnter(Collision collision) {
+		
         if (collision.gameObject.tag != "Player") {
 
 
             GetComponent<Rigidbody>().velocity = Vector3.zero;
 
 			if (canDealDamage) {
+				
 				if (collision.gameObject.tag == "Enemy") {
 					GetComponent<Rigidbody> ().useGravity = false;
 					GetComponent<Rigidbody> ().isKinematic = true;
 					transform.SetParent (collision.gameObject.transform);
 
-					switch (type) {
-					case ProjectileType.Arrow:
-						if (!playedSound) {
-							audioSource.clip = arrowHitAudio;
-							audioSource.Play ();
-							playedSound = true;
-						}
-						break;
-					default:
-						break;
+					if (!playedSound) {
+						audioSource.clip = arrowHitAudio;
+						audioSource.Play ();
+						playedSound = true;
 					}
 
 					AnimalController animal = collision.gameObject.GetComponent<AnimalController> ();
 
 					animal.TakeDamage (this.damage);
+
+					DisableCollider ();
 				}
+
 			}
 
 			canDealDamage = false;
         }
-
     }
+
+	void OnTriggerEnter(Collider collider) {
+		if (collider.gameObject.tag != "Player") {
+			if (canDealDamage) { 
+				if (collider.gameObject.tag == "Water") {
+					GetComponent<Rigidbody> ().useGravity = true;
+					GetComponent<Rigidbody> ().velocity = GetComponent<Rigidbody> ().velocity.normalized * 10f;
+
+
+					if (!playedSound) {
+						audioSource.clip = dropInWaterAudio;
+						audioSource.Play ();
+						playedSound = true;
+					}
+				}
+			}
+		}
+	}
+
+	void DisableCollider() {
+		if (type == ProjectileType.Arrow) {
+
+			this.transform.GetChild (1).GetComponent<Collider>().enabled = false;
+		
+		}
+	}
 }

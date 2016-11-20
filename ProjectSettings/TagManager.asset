@@ -11,8 +11,11 @@ TagManager:
   - Navigation
   - Airwall
   - Projectile
+  - Item
+  - Water
   - Meat
   - SceneController
+
   layers:
   - Default
   - TransparentFX
