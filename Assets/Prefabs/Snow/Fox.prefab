@@ -825,7 +825,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1033748128635208}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.744194, y: 4.95, z: 53.652214}
+  m_LocalPosition: {x: 48.39369, y: 4.75, z: 49.194077}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 4095508778636876}
@@ -1061,13 +1061,14 @@ MonoBehaviour:
   hitRate: 0
   hitDamage: 0
   timeBeforeEscape: 10
-  meat: {fileID: 1000010787675184, guid: fe4ba9782abaac64283989fb5d72176f, type: 2}
+  meat: {fileID: 1390384828613138, guid: 5a5743728214e4faca7971a7b94a4564, type: 2}
   walkAudio: {fileID: 8300000, guid: 9af01ac2fa8f0fd48be024a6a9e1cb8e, type: 3}
   roarAudio: {fileID: 0}
   runAudio: {fileID: 8300000, guid: 0d3beb7460100f044b82c120919832b7, type: 3}
   attackAudio: {fileID: 0}
   hurtAudio: {fileID: 8300000, guid: 03082b29ac7d0774b98e473729e67753, type: 3}
   dieAudio: {fileID: 8300000, guid: 03082b29ac7d0774b98e473729e67753, type: 3}
+  hitAudio: {fileID: 8300000, guid: 4b19989e9a00c4ca89b50f66fcae135c, type: 3}
 --- !u!137 &137745899055760064
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

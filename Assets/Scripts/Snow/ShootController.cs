@@ -7,7 +7,7 @@ public class ShootController : MonoBehaviour {
     public Text weaponText, strengthText;
     public Transform shootSpawn;
     public float fireRate = 1.0f, speedOfDragBow = 0.025f;
-    private Camera camera;
+	private Camera mainCamera;
     private float nextFire, strength;
     private int weapon; // 0 - Stone, 1 - Arrow
     private int typeOfWeapon;
@@ -17,7 +17,7 @@ public class ShootController : MonoBehaviour {
         strength = 0.0f;
         weapon = 0;
         typeOfWeapon = 2;
-        camera = Camera.main;
+        mainCamera = Camera.main;
     }
 
     void Update() {
@@ -52,11 +52,11 @@ public class ShootController : MonoBehaviour {
         }
         // Zoom in
         if (Input.GetMouseButton(1)) {
-            camera.fieldOfView = Mathf.MoveTowards(camera.fieldOfView, 40.0f, 1.0f);
+            mainCamera.fieldOfView = Mathf.MoveTowards(mainCamera.fieldOfView, 40.0f, 1.0f);
         }
         // Zoom out
         if (!Input.GetMouseButton(1)) {
-            camera.fieldOfView = Mathf.MoveTowards(camera.fieldOfView, 60.0f, 1.0f);
+            mainCamera.fieldOfView = Mathf.MoveTowards(mainCamera.fieldOfView, 60.0f, 1.0f);
         }
         // Change weapon
         if (Input.mouseScrollDelta.y != 0.0f) {
