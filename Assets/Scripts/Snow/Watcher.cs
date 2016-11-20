@@ -66,6 +66,10 @@ public class Watcher : MonoBehaviour {
         data.meatCount -= number;
     }
 
+	public int GetSurvivorCount() {
+		return data.survivorCount;
+	}
+
     private void Save() {
         data.position[0] = player.transform.position.x;
         data.position[1] = player.transform.position.y;
