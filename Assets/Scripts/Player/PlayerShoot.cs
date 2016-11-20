@@ -1,5 +1,8 @@
 using System.Collections;
 using UnityEngine;
+
+public enum ShootMode { Rock, Bow }
+
 public class PlayerShoot : MonoBehaviour{
 
     public GameObject mainCamera;
@@ -19,7 +22,7 @@ public class PlayerShoot : MonoBehaviour{
 
     private Animator animator;
     private bool shooting = false;
-    public enum ShootMode {Rock, Bow}
+    
     public ShootMode shootMode = ShootMode.Bow;
 
     void Start() {

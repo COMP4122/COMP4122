@@ -5840,9 +5840,10 @@ GameObject:
   - component: {fileID: 1064658505}
   - component: {fileID: 1064658506}
   - component: {fileID: 1064658507}
+  - component: {fileID: 1064658508}
   m_Layer: 0
-  m_Name: Game Controller
-  m_TagString: Untagged
+  m_Name: Scene Controller
+  m_TagString: SceneController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5901,7 +5902,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5970,6 +5971,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1064658508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1064658503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ffc7c25ce5e2d4bbe22b8daf0a782b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoSaveDuration: 30
+  sceneName: Snow
 --- !u!4 &1093461960 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423920, guid: e77f0653476c12e4cbb2416f486b1a70, type: 2}
@@ -11531,6 +11545,47 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 771c09818c6e3a54c9200ae808495827, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1652532822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1652532824}
+  - component: {fileID: 1652532823}
+  m_Layer: 0
+  m_Name: Game Controller
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1652532823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1652532822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f226c7dc16b00cb49b5f16a142ce3937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serverURL: http://www.junxiongyang.info/utilities/LeaderBoard.php
+--- !u!4 &1652532824
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1652532822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1653234791
 GameObject:
   m_ObjectHideFlags: 0
@@ -11886,6 +11941,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114674796035851544, guid: b888c41d9a2e44b4f9380c76342cc1b9,
+        type: 2}
+      propertyPath: m_JumpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: c804fdcb8d824ae4c9f4f38bc1fc80e3, type: 3}
+    - target: {fileID: 114674796035851544, guid: b888c41d9a2e44b4f9380c76342cc1b9,
+        type: 2}
+      propertyPath: m_LandSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4510e7740572d704da13829658e199b9, type: 3}
+    - target: {fileID: 114674796035851544, guid: b888c41d9a2e44b4f9380c76342cc1b9,
+        type: 2}
+      propertyPath: m_FootstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 889d382ad1e1fe245adf968750438488, type: 3}
+    - target: {fileID: 114674796035851544, guid: b888c41d9a2e44b4f9380c76342cc1b9,
+        type: 2}
+      propertyPath: m_FootstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: c9087680886109b4c946e5b17285be2d, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b888c41d9a2e44b4f9380c76342cc1b9, type: 2}
   m_IsPrefabParent: 0
