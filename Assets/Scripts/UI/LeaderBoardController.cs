@@ -38,7 +38,7 @@ public class LeaderBoardController : MonoBehaviour {
                 break;
             }
             else {
-                text += entityList[i].name + "   " + entityList[i].score + "\n";
+                text += (i+1).ToString() + "\t\t" + entityList[i].name + "   " + entityList[i].score + "\n";
             }
         }
         textField.text = text;

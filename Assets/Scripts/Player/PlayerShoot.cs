@@ -26,12 +26,12 @@ public class PlayerShoot : MonoBehaviour{
     private Animator animator;
     private bool shooting = false;
     
-    public ShootMode shootMode;
+    public ShootMode shootMode = ShootMode.Rock;
 
     void Start() {
         watcher = GameObject.FindGameObjectWithTag("SceneController").GetComponent<Watcher>();
         dc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameDataController>();
-        shootMode = dc.getData().WeaponMode;
+        SwitchShootMode();
         animator = GetComponent<Animator>();
         rockInHand.SetActive(false);
         bowInHand.SetActive(false);
@@ -144,6 +144,11 @@ public class PlayerShoot : MonoBehaviour{
         }
     }
 
+    void SwitchShootMode() {
+        if (dc.getData().WeaponMode != shootMode)
+            SwitchToBow();
+    }
+
 	public void SwitchToBow() {
 		shooting = false;
 		shootSpeed = 0f;
@@ -159,6 +164,7 @@ public class PlayerShoot : MonoBehaviour{
 		maxShootSpeed = 30f;
 
 		shootMode = ShootMode.Rock;
-	}
+        watcher.SetWeaponMode(shootMode);
+    }
 
 }

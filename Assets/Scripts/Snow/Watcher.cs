@@ -11,14 +11,17 @@ public class Watcher : MonoBehaviour {
     private GameData data;  // See GameData.cs in DataStructure folder
     private GameObject player;
     private GameObject dieCamera;
+    private GameObject menu;
 
-    private bool playerDie = false;
+    private bool playerDie = false, menuUp = false;
     private Vector3 dieCameraPosition;
     private Quaternion dieCameraRotation;
 
     void Start() {
         dc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameDataController>();
         player = GameObject.FindGameObjectWithTag("Player");
+        menu = dc.canvas;
+        menu.SetActive(false);
         data = dc.getData();
         // When loading to a new scene from camp
         if (data.sceneName != sceneName) {
@@ -31,21 +34,19 @@ public class Watcher : MonoBehaviour {
             player.transform.position = position;
             player.transform.rotation = rotation;
         }
-        PlayerDie();
+        Time.timeScale = 1.0f;
+        dc.setWatcher(this);
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Z)) {
-            Save();            
+        if (!playerDie && Input.GetKeyDown(KeyCode.Escape)) {
+            SwitchMenu();
         }
-        if (Input.GetKeyDown(KeyCode.X)) {
+        if (!playerDie && Input.GetKeyDown(KeyCode.F5)) {
+            dc.Save(data);
+        }
+        if (!playerDie && Input.GetKeyDown(KeyCode.F9)) {
             dc.Load();
-        }
-        if (Input.GetKeyDown(KeyCode.M)) {
-            Debug.Log(data.meatCount+" "+data.totalNumberOfMeat);
-        }
-        if (Input.GetKeyDown(KeyCode.Q)) {
-            dc.GameOver();
         }
         if (playerDie) {
             dieCamera.transform.position = Vector3.Lerp(dieCamera.transform.position, dieCameraPosition, 0.01f);
@@ -58,6 +59,8 @@ public class Watcher : MonoBehaviour {
     }
 
     public void SetHealth(float health) {
+        if (data == null)
+            data = dc.getData();
         data.health = health;
         if (health <= 0) {
             StartCoroutine(PlayerDie());
@@ -65,20 +68,54 @@ public class Watcher : MonoBehaviour {
     }
 
     public void addMeat(int number) {
+        if (data == null)
+            data = dc.getData();
         data.meatCount += number;
         data.totalNumberOfMeat += number;
     }
 
     public void subMeat(int number) {
+        if (data == null)
+            data = dc.getData();
         data.meatCount -= number;
     }
 
     public void SetWeaponMode(ShootMode mode) {
+        dc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameDataController>();
+        if (data == null)
+            data = dc.getData();
         data.WeaponMode = mode;
     }
 
     public ShootMode getShootMode() {
         return dc.getData().WeaponMode;
+    }
+
+    public void SwitchMenu() {
+        if (menuUp)
+            DisableMenu();
+        else
+            EnableMenu();
+    }
+
+    public void EnableMenu() {
+        menuUp = true;
+        Time.timeScale = 0.01f;
+        menu.SetActive(true);
+        Component[] list = player.GetComponents<MonoBehaviour>();
+        foreach (MonoBehaviour script in list)
+            script.enabled = false;
+        Cursor.visible = true;
+    }
+
+    public void DisableMenu() {
+        menuUp = false;
+        Time.timeScale = 1f;
+        menu.SetActive(false);
+        Component[] list = player.GetComponents<MonoBehaviour>();
+        foreach (MonoBehaviour script in list)
+            script.enabled = true;
+        Cursor.visible = false;
     }
 
     IEnumerator PlayerDie() {
@@ -102,7 +139,7 @@ public class Watcher : MonoBehaviour {
 		return data.survivorCount;
 	}
 
-    private void Save() {
+    public void Save() {
         data.position[0] = player.transform.position.x;
         data.position[1] = player.transform.position.y;
         data.position[2] = player.transform.position.z;
