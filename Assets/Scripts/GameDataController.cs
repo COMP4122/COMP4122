@@ -84,6 +84,7 @@ public class GameDataController : MonoBehaviour {
             data.position[2] = 44f;
         }
         SceneManager.LoadScene(sceneName);
+
     }
     
     public string getSaveFilePath() {
