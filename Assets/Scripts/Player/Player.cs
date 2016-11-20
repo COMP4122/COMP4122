@@ -6,10 +6,12 @@ public class Player : MonoBehaviour {
 
 	public float health = 100f;
 
+    private Watcher watcher;
 	private PlayerShoot playerShoot;
 	private CraftManager craftManager;
 
 	void Start() {
+        watcher = GameObject.FindGameObjectWithTag("SceneController").GetComponent<Watcher>();
 		playerShoot = GetComponent<PlayerShoot> ();
 		craftManager = GetComponent<CraftManager> ();
 	}
@@ -23,15 +25,11 @@ public class Player : MonoBehaviour {
 	}
 
 	public void TakeDamage(float damage) {
+        if (damage > health)
+            damage = health;
+
 		health -= damage;
-
-		if (health <= 0) {
-			Die ();
-		}
-	}
-
-	public void Die() {
-		
+        watcher.SetHealth(health);
 	}
 		
 	public bool IsReadyForMakingBow() {

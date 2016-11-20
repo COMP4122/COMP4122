@@ -13,7 +13,7 @@ public class GameData {
     public float[] rotation;
 
     // Player's health
-    public int health;
+    public float health;
 
     // Player's weapon mode
     public ShootMode WeaponMode = ShootMode.Rock;
