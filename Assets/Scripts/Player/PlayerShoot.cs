@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 public class PlayerShoot : MonoBehaviour{
 
-    public GameObject camera;
+    public GameObject mainCamera;
 
     public GameObject rockInHand;
     public Projectile rock;
@@ -88,7 +88,7 @@ public class PlayerShoot : MonoBehaviour{
         animator.SetTrigger("ThrowOutRock");
         Vector3 posForRock = rockInHand.transform.position;
         rockInHand.SetActive(false);
-        Vector3 target = transform.position + camera.transform.forward * 50f;
+        Vector3 target = transform.position + mainCamera.transform.forward * 50f;
 
         Projectile newRock = (Projectile) Instantiate(rock, posForRock, new Quaternion(0f, 0f, 0f, 0f));
         newRock.SetFlySpeed(shootSpeed);

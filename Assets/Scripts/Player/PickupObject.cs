@@ -27,7 +27,6 @@ public class PickupObject : MonoBehaviour {
         yield return new WaitForSeconds(0.5f);
 
 		meat.gameObject.transform.SetParent (GameObject.Find ("ArmR2").transform);
-        
 
         yield return new WaitForSeconds(1f);
 

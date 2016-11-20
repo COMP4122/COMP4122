@@ -12,7 +12,6 @@ public class Projectile : MonoBehaviour{
     private AudioSource audioSource;
     private float flySpeed;
     private Vector3 direction;
-    private bool flying = false;
     private Rigidbody rb;
 
     void Awake() {
@@ -30,7 +29,6 @@ public class Projectile : MonoBehaviour{
     }
 
     public void ThrowOut() {
-        flying = true;
         rb.velocity = direction * flySpeed;
     }
 

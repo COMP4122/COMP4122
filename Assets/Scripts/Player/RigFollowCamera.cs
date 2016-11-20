@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class RigFollowCamera : MonoBehaviour {
 
-    public GameObject camera;
+    public GameObject mainCamera;
     private bool followingCamera;
 
 
     void Update () {
-        transform.rotation = camera.transform.rotation;
+        transform.rotation = mainCamera.transform.rotation;
         transform.Rotate(transform.forward, -90f, Space.World);
     }
 }

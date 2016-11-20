@@ -6,7 +6,6 @@ public class Bow : MonoBehaviour{
 
     private float flySpeed;
     private Vector3 direction;
-    private bool flying = false;
     private Rigidbody rb;
 
     void Awake() {
@@ -24,7 +23,6 @@ public class Bow : MonoBehaviour{
     }
 
     public void ThrowOut() {
-        flying = true;
         rb.velocity = direction * flySpeed;
     }
 }

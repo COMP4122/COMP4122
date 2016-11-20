@@ -7,7 +7,7 @@ public class ArrowController : MonoBehaviour {
     public AudioClip shoot, land;
 
     private Rigidbody rb;
-    private Collider collider;
+	private Collider thisCollider;
     private AudioSource audioSource;
     private bool stoped;
 
@@ -20,7 +20,7 @@ public class ArrowController : MonoBehaviour {
 
 	void Start () {
         rb = GetComponent<Rigidbody>();
-        collider = GetComponent<Collider>();
+        thisCollider = GetComponent<Collider>();
         audioSource = GetComponent<AudioSource>();
         stoped = false;
 	}
@@ -41,7 +41,7 @@ public class ArrowController : MonoBehaviour {
         if (!keepRigidbodyAfterHit) {
             rb.velocity = Vector3.zero;
             rb.isKinematic = true;
-            collider.enabled = false;
+            thisCollider.enabled = false;
             transform.Translate(Vector3.up * translateValueAfterHit);
             transform.SetParent(collision.gameObject.transform);
         }

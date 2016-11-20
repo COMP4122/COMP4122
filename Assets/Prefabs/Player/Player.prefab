@@ -1645,7 +1645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff7d1b38532d47a4b9fa6db469882ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 1854980491979356}
+  mainCamera: {fileID: 1854980491979356}
 --- !u!114 &114674796035851544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1759,7 +1759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f88253b5cc24a4868a4dc5c92668ef69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 1854980491979356}
+  mainCamera: {fileID: 0}
   rockInHand: {fileID: 1747411042424886}
   rock: {fileID: 114183392750300168, guid: 94ed2a241bbeb409a8d22164a1d09ca2, type: 2}
   bowInHand: {fileID: 1666010430574246}
