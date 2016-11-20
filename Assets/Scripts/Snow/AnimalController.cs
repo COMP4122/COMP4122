@@ -1,21 +1,21 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.AI;
+using System.Collections;
 
 public class AnimalController : MonoBehaviour {
     public float maxHealth, walkSpeed, runSpeed, detectDistance;
     public bool isAggresive;
     public float hitRate, hitDamage, timeBeforeEscape;
     public GameObject meat;
-    public AudioClip walkAudio, roarAudio, runAudio, attackAudio, hurtAudio, dieAudio;
+    public AudioClip walkAudio, roarAudio, runAudio, attackAudio, hurtAudio, dieAudio, hitAudio;
 
     private Camera mainCamera;
-    private Transform player, targetLocation;
-    private PlayerStateController playerController;
+	private Transform playerTransform, targetLocation;
+	private Player player;
     private Rigidbody rb;
     private Collider co;
     private Animator anim;
-    private NavMeshAgent nav;
+    private UnityEngine.AI.NavMeshAgent nav;
     private GameObject[] navPoints;
     private AudioSource audioSource;
 
@@ -26,8 +26,8 @@ public class AnimalController : MonoBehaviour {
         // Find Player
         GameObject playerObject = GameObject.FindWithTag("Player");
         if (playerObject != null) {
-            player = playerObject.transform;
-            playerController = playerObject.GetComponent<PlayerStateController>();
+            playerTransform = playerObject.transform;
+            player = playerObject.GetComponent<Player>();
         }
         
         // Setup Component
@@ -35,7 +35,7 @@ public class AnimalController : MonoBehaviour {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         co = GetComponentInChildren<MeshCollider>();
-        nav = GetComponent<NavMeshAgent>();
+        nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
         navPoints = GameObject.FindGameObjectsWithTag("Navigation");
         audioSource = GetComponent<AudioSource>();
 
@@ -59,18 +59,18 @@ public class AnimalController : MonoBehaviour {
             {
                 if (isAggresive)
                 {
-                    if (Time.time > nextHit && Vector3.Distance(transform.position, player.position) < 4.0f)
+                    if (Time.time > nextHit && Vector3.Distance(transform.position, playerTransform.position) < 4.0f)
                         Hit();
-                    if (!isHitting && Vector3.Distance(transform.position, player.position) > 3.5f)
+                    if (!isHitting && Vector3.Distance(transform.position, playerTransform.position) > 3.5f)
                         RunToPlayer();
-                    if (!isHitting && Vector3.Distance(transform.position, player.position) <= 3.5f)
+                    if (!isHitting && Vector3.Distance(transform.position, playerTransform.position) <= 3.5f)
                         WaitToHit();
                 }
                 else {
                     AvoidPlayer();
                     if (escaping) {
                         Vector3 position = mainCamera.WorldToViewportPoint(transform.position);
-                        if ((position.x < 0.0f || position.x > 1.0f) && (position.y < 0.0f || position.y > 1.0f) && Vector3.Distance(transform.position, player.transform.position) > 20.0f)
+                        if ((position.x < 0.0f || position.x > 1.0f) && (position.y < 0.0f || position.y > 1.0f) && Vector3.Distance(transform.position, playerTransform.transform.position) > 20.0f)
                             Destroy(gameObject);
                     }
                 }
@@ -84,7 +84,7 @@ public class AnimalController : MonoBehaviour {
                     patrol();
 
                 // Find player
-                if (Vector3.Distance(transform.position, player.position) < detectDistance || isroaring)
+                if (Vector3.Distance(transform.position, playerTransform.position) < detectDistance || isroaring)
                 {
                     if (isAggresive)
                     {
@@ -122,7 +122,7 @@ public class AnimalController : MonoBehaviour {
             audioSource.Play();
         }
         SetRunning(true);
-        nav.destination = player.position;
+        nav.destination = playerTransform.position;
     }
 
     void WaitToHit() {
@@ -147,7 +147,7 @@ public class AnimalController : MonoBehaviour {
         float maxDistance = 0.0f;
         int index = 0;
         for (int i = 0; i < navPoints.Length; i++) {
-            float distance = Vector3.Distance(player.transform.position, navPoints[i].transform.position);
+            float distance = Vector3.Distance(playerTransform.transform.position, navPoints[i].transform.position);
             if (distance > maxDistance) {
                 maxDistance = distance;
                 index = i;
@@ -212,18 +212,12 @@ public class AnimalController : MonoBehaviour {
     void OnTriggerEnter(Collider other) {
         if (other.tag == "Player" && isHitting && !hitted) {
             hitted = true;
-            playerController.TakeDamage(hitDamage);
+            player.TakeDamage(hitDamage);
         }
     }
 
     // This function is to detect that player's weapon hits the animal
-    void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.tag == "Arrow") {
-            ArrowController ac = collision.gameObject.GetComponent<ArrowController>();
-            float ratio = collision.relativeVelocity.magnitude / ac.maxSpeed;
-            TakeDamage(ac.maxDamage * ratio);
-        }
-    }
+	// deleted, now the damage is handled by Projectile
 
     /* This function is called by aggressive animal when it finds player.
        The animal shall roar before try to attack.
@@ -250,8 +244,9 @@ public class AnimalController : MonoBehaviour {
 
     /* This function is called when animal is attacked by player
      * */
-    void TakeDamage(float damage) {
+    public void TakeDamage(float damage) {
         if (health > 0) {
+
             audioSource.clip = hurtAudio;
             audioSource.loop = false;
             audioSource.Play();
@@ -288,7 +283,7 @@ public class AnimalController : MonoBehaviour {
     // To let animal turns to player gradually
     void RotateToPlayer(float speed) {
         Quaternion originalRotation = transform.rotation;
-        transform.LookAt(player);
+        transform.LookAt(playerTransform);
         Quaternion targetRotation = transform.rotation;
         transform.rotation = originalRotation;
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, speed);

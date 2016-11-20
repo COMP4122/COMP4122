@@ -9,6 +9,9 @@ TagManager:
   - Arrow
   - Invisible
   - Navigation
+  - Airwall
+  - Projectile
+  - Meat
   layers:
   - Default
   - TransparentFX
@@ -19,9 +22,9 @@ TagManager:
   - 
   - 
   - Ground
-  - 
-  - 
-  - 
+  - Invisible
+  - Rock
+  - Projectile
   - 
   - 
   - 
