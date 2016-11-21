@@ -6,18 +6,17 @@ public class SurvivorController : MonoBehaviour {
 
 	public GameObject[] survivors;
 
-	private int survivorCount = 3;
-	private Watcher watcher;
+	private int survivorCount;
+	private GameDataController dc;
 
-	void Awake() {
-		watcher = GameObject.FindGameObjectWithTag ("SceneController").GetComponent<Watcher> ();
-		UpdateSurvivorCount ();
-		Debug.Log ("Load scene called: " + watcher.GetSurvivorCount());
+	void Start() {
+		dc = GameObject.FindGameObjectWithTag ("GameController").GetComponent<GameDataController> ();
+        UpdateSurvivorCount();
 	}
 		
 	public void UpdateSurvivorCount() {
-		survivorCount = watcher.GetSurvivorCount ();
-
+		survivorCount = dc.getData().survivorCount;
+        
 		if (survivorCount > 3) {
 			Debug.Log ("There should not be more than 3 survivors");
 		} else {
@@ -30,8 +29,9 @@ public class SurvivorController : MonoBehaviour {
 				survivors [i].SetActive (true);
 			}
 		}
-			
-	}
+        if (survivorCount <= 0)
+            dc.GameOver();
+    }
 
 
 }
