@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114652727195146234}
   m_Layer: 0
   m_Name: Wolf
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -296,6 +296,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4415192576121416}
+  - component: {fileID: 65442382549684804}
   m_Layer: 0
   m_Name: Neck
   m_TagString: Untagged
@@ -793,7 +794,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1073868653184520}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.59185, y: 6.29, z: -9.19}
+  m_LocalPosition: {x: -0.59185, y: 6.41, z: -9.19}
   m_LocalScale: {x: 0.28553948, y: 0.2855395, z: 0.2855395}
   m_Children:
   - {fileID: 4735940944756064}
@@ -1003,6 +1004,18 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: fc07e31c79723d24cb5757ecc840c7a2, type: 3}
+--- !u!65 &65442382549684804
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1637800560458424}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3458443, y: 4.5234056, z: 3.3432708}
+  m_Center: {x: -0.121307105, y: 1.7615038, z: 0.2318611}
 --- !u!82 &82412071240700314
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1111,7 +1124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0096694b7ff57a48864ee54d1e8be8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 130
+  maxHealth: 200
   walkSpeed: 2
   runSpeed: 5
   detectDistance: 10
@@ -1124,9 +1137,9 @@ MonoBehaviour:
   roarAudio: {fileID: 8300000, guid: 6cc223417c38f2441be4656c663a1903, type: 3}
   runAudio: {fileID: 8300000, guid: 852ce36588a9a8143904006049ea9cb9, type: 3}
   attackAudio: {fileID: 8300000, guid: 8be53a3c52334514aacbbdfd5e20e822, type: 3}
-  hurtAudio: {fileID: 8300000, guid: b0eb718c6d85ca44f8489751b4786778, type: 3}
+  hurtAudio: {fileID: 8300000, guid: 559d8e3c922d66a49b697fc7725e54da, type: 3}
   dieAudio: {fileID: 8300000, guid: 559d8e3c922d66a49b697fc7725e54da, type: 3}
-  hitAudio: {fileID: 0}
+  hitAudio: {fileID: 8300000, guid: 8be53a3c52334514aacbbdfd5e20e822, type: 3}
 --- !u!137 &137886490348138312
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

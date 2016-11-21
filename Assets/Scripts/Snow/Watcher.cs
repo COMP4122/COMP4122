@@ -35,6 +35,8 @@ public class Watcher : MonoBehaviour {
             player.transform.rotation = rotation;
         }
         Time.timeScale = 1.0f;
+        dc.slider.value = 1.0f;
+        dc.slider2.value = 0f;
         dc.setWatcher(this);
     }
 
@@ -62,6 +64,7 @@ public class Watcher : MonoBehaviour {
         if (data == null)
             data = dc.getData();
         data.health = health;
+        dc.slider.value = health / 100;
         if (health <= 0) {
             StartCoroutine(PlayerDie());
         }
@@ -72,6 +75,7 @@ public class Watcher : MonoBehaviour {
             data = dc.getData();
         data.meatCount += number;
         data.totalNumberOfMeat += number;
+        dc.slider2.value = data.meatCount / (data.survivorCount * 5.0f);
     }
 
     public void subMeat(int number) {
@@ -132,17 +136,13 @@ public class Watcher : MonoBehaviour {
         data.meatCount = 0;
         data.health = 100f;
         data.survivorCount -= 1;
-        dc.ChangeScene(data, "Camp");
+        if (data.survivorCount == 0)
+        {
+            dc.GameOver();
+        }
+        else
+            dc.ChangeScene(data, "Camp");
     }
-
-	public int GetSurvivorCount() {
-		if (data != null) {
-			Debug.Log ("data is not null");
-			return data.survivorCount;
-		} else {
-			return 3;
-		}
-	}
 
     public void Save() {
         data.position[0] = player.transform.position.x;

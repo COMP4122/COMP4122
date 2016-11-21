@@ -951,7 +951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0096694b7ff57a48864ee54d1e8be8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 200
+  maxHealth: 400
   walkSpeed: 2
   runSpeed: 5
   detectDistance: 10
@@ -959,7 +959,7 @@ MonoBehaviour:
   hitRate: 3
   hitDamage: 50
   timeBeforeEscape: 0
-  meat: {fileID: 1390384828613138, guid: 5a5743728214e4faca7971a7b94a4564, type: 2}
+  meat: {fileID: 1390384828613138, guid: 99c24d92b1ca141438e00067d2ce11ab, type: 2}
   walkAudio: {fileID: 8300000, guid: 958cf2215c43b844b889cdd6af415ff6, type: 3}
   roarAudio: {fileID: 8300000, guid: 9331b161a842f79499747e41d7454ecf, type: 3}
   runAudio: {fileID: 8300000, guid: 11129fd4fcfc86840ae0e13b9ca0796a, type: 3}

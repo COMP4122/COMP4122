@@ -11,7 +11,8 @@ public class GameDataController : MonoBehaviour {
     public static GameDataController singleton;
     public string serverURL;
 
-    public GameObject canvas;
+    public GameObject canvas, playerCanvas;
+    public Slider slider, slider2;
     public Text saveText;
     public InputField nameInput;
     private Watcher watcher;
@@ -29,13 +30,14 @@ public class GameDataController : MonoBehaviour {
 	}
 
     void Start() {
-        canvas = GameObject.Find("Canvas");
         nameInput.gameObject.SetActive(false);
         canvas.SetActive(false);
+        playerCanvas.SetActive(false);
     }
 
     public void NewGame() {
         InitData();
+        playerCanvas.SetActive(true);
         SceneManager.LoadScene(data.sceneName);
     }
 
@@ -54,6 +56,7 @@ public class GameDataController : MonoBehaviour {
             FileStream file = File.Open(getSaveFilePath(), FileMode.Open);
             data = (GameData)bf.Deserialize(file);
             file.Close();
+            playerCanvas.SetActive(true);
             SceneManager.LoadScene(data.sceneName);
         }
     }
@@ -63,7 +66,17 @@ public class GameDataController : MonoBehaviour {
     }
 
     public void GameOver() {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player.SetActive(false);
+        GameObject dieCamera = new GameObject();
+        dieCamera.AddComponent<Camera>();
+        dieCamera.AddComponent<AudioListener>();
+        dieCamera.transform.position = player.transform.position;
+        dieCamera.transform.Translate(0f, 10f, 0f);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         canvas.SetActive(true);
+        playerCanvas.SetActive(true);
         nameInput.gameObject.SetActive(true);
     }
 
@@ -82,6 +95,10 @@ public class GameDataController : MonoBehaviour {
             data.position[0] = 35f;
             data.position[1] = 0f;
             data.position[2] = 44f;
+            data.dayCount++;
+            if (data.meatCount < data.survivorCount * 5)
+                data.survivorCount--;
+            data.meatCount = 0;
         }
         SceneManager.LoadScene(sceneName);
 

@@ -2929,7 +2929,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 425530, guid: 68e8fa4da3a00fd499948d40c7339ebe, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 425530, guid: 68e8fa4da3a00fd499948d40c7339ebe, type: 2}
       propertyPath: m_LocalScale.z
@@ -2946,6 +2946,10 @@ Prefab:
     - target: {fileID: 153448, guid: 68e8fa4da3a00fd499948d40c7339ebe, type: 2}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 425530, guid: 68e8fa4da3a00fd499948d40c7339ebe, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68e8fa4da3a00fd499948d40c7339ebe, type: 2}
@@ -4083,11 +4087,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 753102554}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.2280664, y: 3.1467915, z: 4.6197205}
-  m_Center: {x: 1.3501625, y: 3.5713902, z: 0.31126404}
+  m_Size: {x: 2.2280664, y: 6.9378395, z: 4.6197205}
+  m_Center: {x: 1.3501625, y: 5.4669113, z: 0.31126404}
 --- !u!114 &753102557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7034,7 +7038,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -2111655771
+  randomSeed: -1578102995
   InitialModule:
     serializedVersion: 3
     enabled: 1
