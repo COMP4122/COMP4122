@@ -21,6 +21,10 @@ GameObject:
   - component: {fileID: 4000012243078486}
   - component: {fileID: 114000013271131594}
   - component: {fileID: 114657717559287828}
+  - component: {fileID: 33894256549358374}
+  - component: {fileID: 23986235651474970}
+  - component: {fileID: 54779595682934358}
+  - component: {fileID: 64698507236118166}
   m_Layer: 0
   m_Name: mushroom_red_1
   m_TagString: Item
@@ -36,10 +40,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4000010490576006}
-  - component: {fileID: 33000013332634388}
-  - component: {fileID: 23000010332036008}
-  - component: {fileID: 54498895929093544}
-  - component: {fileID: 64475543743982272}
   m_Layer: 0
   m_Name: Mesh1_Mushroom_Red_Model
   m_TagString: Item
@@ -74,12 +74,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23000010332036008
+--- !u!23 &23986235651474970
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010728692638}
+  m_GameObject: {fileID: 1000010195046396}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -106,19 +106,19 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33000013332634388
+--- !u!33 &33894256549358374
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010728692638}
+  m_GameObject: {fileID: 1000010195046396}
   m_Mesh: {fileID: 4300000, guid: 523cf27d8b269d5438c7ba586836f756, type: 3}
---- !u!54 &54498895929093544
+--- !u!54 &54779595682934358
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010728692638}
+  m_GameObject: {fileID: 1000010195046396}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -128,12 +128,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64475543743982272
+--- !u!64 &64698507236118166
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010728692638}
+  m_GameObject: {fileID: 1000010195046396}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1

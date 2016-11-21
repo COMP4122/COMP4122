@@ -136,7 +136,12 @@ public class Watcher : MonoBehaviour {
     }
 
 	public int GetSurvivorCount() {
-		return data.survivorCount;
+		if (data != null) {
+			Debug.Log ("data is not null");
+			return data.survivorCount;
+		} else {
+			return 3;
+		}
 	}
 
     public void Save() {

@@ -11,8 +11,10 @@ public class SurvivorController : MonoBehaviour {
 
 	void Awake() {
 		watcher = GameObject.FindGameObjectWithTag ("SceneController").GetComponent<Watcher> ();
+		UpdateSurvivorCount ();
+		Debug.Log ("Load scene called: " + watcher.GetSurvivorCount());
 	}
-
+		
 	public void UpdateSurvivorCount() {
 		survivorCount = watcher.GetSurvivorCount ();
 

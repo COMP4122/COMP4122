@@ -7,12 +7,15 @@ public class Mushroom : Item {
 	public int noOfFood;
 	private Watcher watcher;
 
+	// public GameDataController gameDataController;
+
 	void Start() {
 		watcher = GameObject.FindGameObjectWithTag("SceneController").GetComponent<Watcher>();
 	}
 
 	public override void GotPickedUp() {
 
+		// TODO: gameDataController method here
 		watcher.addMeat(noOfFood);
 		Destroy(this.gameObject);
 
