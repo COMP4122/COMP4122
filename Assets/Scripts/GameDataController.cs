@@ -67,7 +67,9 @@ public class GameDataController : MonoBehaviour {
 
     public void GameOver() {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        player.SetActive(false);
+		if (player.activeSelf) {
+			player.SetActive (false);
+		}
         GameObject dieCamera = new GameObject();
         dieCamera.AddComponent<Camera>();
         dieCamera.AddComponent<AudioListener>();
