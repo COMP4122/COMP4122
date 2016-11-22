@@ -25757,11 +25757,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4483002607853068, guid: b888c41d9a2e44b4f9380c76342cc1b9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -27
+      value: -8.7
       objectReference: {fileID: 0}
     - target: {fileID: 4483002607853068, guid: b888c41d9a2e44b4f9380c76342cc1b9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.86
+      value: 18.025
       objectReference: {fileID: 0}
     - target: {fileID: 4483002607853068, guid: b888c41d9a2e44b4f9380c76342cc1b9, type: 2}
       propertyPath: m_LocalPosition.z
@@ -25792,24 +25792,6 @@ Prefab:
       propertyPath: m_CustomSkybox
       value: 
       objectReference: {fileID: 2100000, guid: 9251246bd7a89b14cb67dc0f2c7808fe, type: 2}
-    - target: {fileID: 114674796035851544, guid: b888c41d9a2e44b4f9380c76342cc1b9,
-        type: 2}
-      propertyPath: m_MouseLook.smooth
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 143603316699666646, guid: b888c41d9a2e44b4f9380c76342cc1b9,
-        type: 2}
-      propertyPath: m_StepOffset
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276444762419136, guid: b888c41d9a2e44b4f9380c76342cc1b9, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.173
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276444762419136, guid: b888c41d9a2e44b4f9380c76342cc1b9, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b888c41d9a2e44b4f9380c76342cc1b9, type: 2}
   m_IsPrefabParent: 0
