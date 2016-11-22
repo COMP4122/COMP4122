@@ -32,7 +32,7 @@ public class Watcher : MonoBehaviour {
             Vector3 position = new Vector3(data.position[0], data.position[1], data.position[2]);
             Quaternion rotation = new Quaternion(data.rotation[1], data.rotation[2], data.rotation[3], data.rotation[0]);
             player.transform.position = position;
-            player.transform.rotation = rotation;
+            // player.transform.rotation = rotation;
         }
         Time.timeScale = 1.0f;
         dc.slider.value = 1.0f;
